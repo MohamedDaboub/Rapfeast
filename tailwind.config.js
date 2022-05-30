@@ -23,9 +23,13 @@ module.exports = {
         "poppins": "Poppins",
         "timmana": "Timmana"
       },
-      "boxShadow": {
+      "dropshadow": {
         "EFFET": "0px 0px 10px 0px rgba(255,255,255,0.75)"
       },
+      "boxShadow": {
+        "contact": "inset 7px 5px 10px 3px rgba(0,0,0,0.25)"
+      },
+
       "borderRadius": {
         "none": "0",
         "xs": "0.25rem",

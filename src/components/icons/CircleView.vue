@@ -8,6 +8,6 @@
   class="w-4/5 md:w-full"
   preserveAspectRatio="xMidYMid meet"
 >
-  <circle cx="52" cy="52" r="52" fill="#B91C1C"></circle>
+  <circle cx="52" cy="52" r="52" fill=""></circle>
 </svg>
 </template>
