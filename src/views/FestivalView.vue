@@ -17,3 +17,12 @@
         </div>
     </section>
 </template>
+<script>
+import flech from "../components/icons/FlechbasView.vue"
+import fight from "../components/icons/FightView.vue"
+import ticket  from "../components/icons/TicketView.vue"
+export default {
+    name: "App",
+    components: { flech,fight,ticket  },
+}
+</script>
