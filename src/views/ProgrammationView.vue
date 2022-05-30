@@ -7,3 +7,14 @@
     
 
 </template>
+<script>
+import cardpro from "../components/CardproView.vue"
+export default {
+    props:{
+
+    },
+       
+    
+    components:{cardpro}
+}
+</script>
