@@ -9,3 +9,11 @@
         </div>
     </main>
 </template>
+<script>
+import flech from "../components/icons/FlechbasView.vue"
+
+export default {
+    name: "App",
+    components: { flech, },
+};
+</script>
