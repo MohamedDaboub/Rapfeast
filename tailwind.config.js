@@ -34,7 +34,10 @@ module.exports = {
         "lg": "2rem",
         "xl": "2.1875rem",
         "full": "9999px"
-      }
+      },
+      "gridTemplateColumns": {
+        "colonne2": "grid-cols-[repeat(auto-fit,minmax(285px,1fr))]"
+      },
     },
   },
   plugins: [],
