@@ -36,10 +36,10 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <main id="content" class=" bg-Default/me/Noir">
       <aside class=" relative flex flex-col gap-5 z-10">
-        <a href="http://"><Facebook /></a>
-        <a href="http://"><Instagram /></a>
-        <a href="http://"><Twitter /></a>
-        <a href="http://"><Youtube /></a>
+        <a href="http://"><Facebook class=" fixed  right-1 py-5   lg:py-8"/></a>
+        <a href="http://"><Instagram class=" fixed right-1 py-12  lg:py-20"/></a>
+        <a href="http://"><Twitter class=" fixed right-1  py-20 lg:py-32"/></a>
+        <a href="http://"><Youtube class=" fixed right-1 py-28 lg:py-44 "/></a>
       </aside>
     <Router-View />
   </main>
