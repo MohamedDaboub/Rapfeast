@@ -27,6 +27,49 @@
                 </div>
             </div>
         </div>
+        <div class="mx-6 md:mx-8 lg:mx-10">
+            <div>
+                <h2 class="text-lg  md:text-2xl font-timmana text-center py-7">Rencontrez vos artistes preferes !
+                </h2>
+                <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Découvrez la liste
+                    de tous nos artistes qui se produiront lors des prochains événements et choisissez le meilleur
+                    concert pour vous en fonction de
+                    cette liste !</p>
+                <div>
+                    <card class="w-full" image="/public/img-squirrel/Image3.webp"
+                        nom="Plus de 9 rappeurs dans un le meilleur rappeur De France !" router="Programmation"></card>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg  md:text-2xl font-timmana text-center py-7">Retrouvez le planning de notre concert
+                </h2>
+                <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Retrouvez tous nos
+                    concerts disponibles en juillet de cette année</p>
+                <div>
+                    <card class="w-full" image="/public/img-squirrel/Image4.webp"
+                        nom="Cet été, il y a plus de 9 spectacles disponibles à besançon !"></card>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg  md:text-2xl font-timmana text-center py-7">Plus d’information sur notre Festival
+                </h2>
+                <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Retrouvez tous les
+                    informations disponibles sur notre festival de cette année</p>
+                <div>
+                    <card class="w-full" image="/public/img-squirrel/Image5.webp"
+                        nom="Pour avoir plus Information sur notre festival RAP FEAST "></card>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg  md:text-2xl font-timmana text-center py-7">Pour nous contact</h2>
+                <p class=":text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Si vous voulais nous
+                    contact pour avoir plus d’information sur notre festival</p>
+            </div>
+            <div>
+                <card class="w-full" image="/public/img-squirrel/Image6.webp"
+                    nom="Si vous avez la moindre question n’hésitez pas à nous contacter"></card>
+            </div>
+        </div>
     </main>
 </template>
 <script>
