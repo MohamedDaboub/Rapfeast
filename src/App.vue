@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 <template>
     <header class=" bg-Default/me/Gris sticky top-0 drop-shadow-lg z-10 ">
+    <a href="#content" class="sr-only focus:not-sr-only text-lg text-white"> Passez au contenu </a>
     <nav class=" ">
       <div class="">
       <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="" alt=""></RouterLink>
@@ -30,8 +31,9 @@ import { RouterLink, RouterView } from 'vue-router'
       </ul>
     </nav>
   </header>
+  <main id="content">
     <Router-View />
-
+  </main>
 </template>
 
 <script>
