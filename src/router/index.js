@@ -22,7 +22,11 @@ const router = createRouter({
     { path: '/Mentionslegales', name: 'MentionslegalesView', component: MentionslegalesView },
     { path: '/:pathMatch(.*)*', name: 'page404', component: page404 },
 
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return savedPosition || { top: 0 }
+  },
 })
 
 export default router
