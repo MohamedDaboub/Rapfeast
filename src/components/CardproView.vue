@@ -1,6 +1,6 @@
 <template>
     <figure class="bg-Default/me/Gris">
-        <img class="my-4 text-center flex m-auto w-11/12" :src="image1" alt="">
+        <img class="my-4 text-center flex m-auto w-11/12" :src="image1" alt="image de l'artiste">
         <figcaption>
             <div class=" relative flex flex-col text-white text-3xl font-timmana mx-6 my-6">
                 <h3 class="   ">{{ nomart }}</h3>

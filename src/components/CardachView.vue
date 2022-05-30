@@ -2,7 +2,7 @@
     <div>
         <figure class="bg-Default/me/Gris p-5 text-white font-poppins">
             <div class="flex gap-2">
-                <img :src="image2" class="w-3/5" alt="">
+                <img :src="image2" class="w-3/5" alt="image de l'artiste">
                 <div class="flex flex-col mx-1 justify-center items-center">
                     <RouterLink class="px-4 py-4 xl-px-8  bg-Default/me/Noir my-4 text-center w-full hover:bg-white hover:text-black " to="/Artistes">Réserver</RouterLink>
                     <h4 class="mx-2">De {{fmtEuro(prix)}} à  {{fmtEuro(prixto)}}</h4>
