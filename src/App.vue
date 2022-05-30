@@ -3,10 +3,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 </script>
 <template>
-  <header class=" ">
+    <header class=" bg-Default/me/Gris sticky top-0 drop-shadow-lg z-10 ">
     <nav class=" ">
       <div class="">
-      <RouterLink to="/"><img src="" class="" alt=""></RouterLink>
+      <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="" alt=""></RouterLink>
       <span class=" ">
         <MenuIcon class=" text-white"></MenuIcon>
       </span>
