@@ -37,6 +37,35 @@ import { RouterLink, RouterView } from 'vue-router'
   <main id="content">
     <Router-View />
   </main>
+  <footer class="bg-Default/me/Gris pt-10 px-10 flex-wrap ">
+    <div class="text-white flex flex-col md:flex   gap-7 items-center">
+      <p class="font-timmana xl:text-2xl text-lg">Recevoir notre actualite par newsletter :</p>
+      <div class="  sm:flex lg:gap-14 items-center"> 
+        <label for="email" class="mx-5">
+          <input type="text" id="email" name="email" value="" placeholder="exemple@Mail.com" class=" placeholder:text-center placeholder:text-lg border bg-white border-Default/me/Noir shadow-contact lg:w-[473px] h-9 text-black">
+        </label>
+        <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white my-5  mx-5 ">Je m'abonne</button>
+        </div>
+    </div>
+    <div class=" grid text-center text-white text-xl font-timmana  lg:hidden">
+      <RouterLink class="my-2" to="/">Home</RouterLink>
+      <RouterLink class="my-2" to="/Programmation">Programmation</RouterLink>
+      <RouterLink class="my-2" to="/Artistes">Artistes</RouterLink>
+      <RouterLink class="my-2" to="/Festival">Festival</RouterLink>
+      <RouterLink class="my-2" to="/Contact">Contact</RouterLink>
+    </div>
+    <div>
+      <img src="../public/icon_svg/logo-site.svg" class="flex m-auto text-center w-36" alt="">
+    </div>
+    <div class="font-timmana text-white grid lg:grid-cols-2 text-center py-4 ">
+      <p class=" text-lg md:text-2xl my-5 lg:my-0 ">© RAP FEAST-2022</p>
+      <div class=" text-xl gap-7 mt-1 ">
+        <RouterLink class=" " to="/Contact">Contact</RouterLink>
+        &ndash;
+        <RouterLink class=" " to="/Mentionslegales">Mentions legales</RouterLink>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
