@@ -12,22 +12,25 @@ import { RouterLink, RouterView } from 'vue-router'
         <MenuIcon class=" text-white"></MenuIcon>
       </span>
       </div>
-      <ul class="" >
+      <ul class="lg:flex  gap-6 lg:items-center text-white text-xl font-timmana mx-6 py-4" >
         <li>
-          <RouterLink class=" " to="/">Home</RouterLink>
+          <RouterLink class="my-6 lg:my-0 " to="/">Home</RouterLink>
         </li>
         <li>
-          <RouterLink class=" " to="/Programmation">Programmation</RouterLink>
+          <RouterLink class="my-6 lg:my-0 " to="/Programmation">Programmation</RouterLink>
         </li>
         <li>
-          <RouterLink class=" " to="/Artistes">Artistes</RouterLink>
+          <RouterLink class="my-6 lg:my-0 " to="/Artistes">Artistes</RouterLink>
         </li>
         <li>
-          <RouterLink class=" " to="/Festival">Festival</RouterLink>
+          <RouterLink class="my-6 lg:my-0 " to="/Festival">Festival</RouterLink>
         </li>
         <li>
-          <RouterLink class=" " to="/Contact">Contact</RouterLink>
+          <RouterLink class="my-6 lg:my-0 " to="/Contact">Contact</RouterLink>
         </li>
+        <div class=" ">
+          <RouterLink class="px-8 bg-Default/me/Noir py-4 text-white font-poppins text-base my-6 lg:my-0 " to="/Artistes">ACHETER DES BILLETS</RouterLink>
+        </div>
       </ul>
     </nav>
   </header>
