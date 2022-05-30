@@ -21,9 +21,11 @@
             <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] md:bottom-[18%] right-[25%] md:right-[30%]">9 GROUPE</h4>
             <div class="absolute bottom-[0%] left-[38%] md:left-[45%] md:bottom-[5%] ">
                 <div class="relative">
-                    <cirecle class="relative fill-Default/me/red hover:fill-blue-700"></cirecle>
-                    <TrendingUpIcon class="absolute top-1/4 md:right-[10%] w-1/4 right-[20%] "></TrendingUpIcon>
-                    <p class="absolute top-1/4 left-[10%] ">Acheter <br> des billets</p>
+                    <RouterLink to="/Artistes">
+                        <cirecle class="relative fill-Default/me/red hover:fill-blue-700"></cirecle>
+                        <TrendingUpIcon class="absolute top-1/4 md:right-[10%] w-1/4 right-[20%] "></TrendingUpIcon>
+                        <p class="absolute top-1/4 left-[10%] ">Acheter <br> des billets</p>
+                    </RouterLink>        
                 </div>
             </div>
         </div>
