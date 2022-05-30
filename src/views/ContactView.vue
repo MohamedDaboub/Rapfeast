@@ -37,7 +37,7 @@
                             class="mr-5 h-6 w-6 border-2 border-Default/me/Gris" required>
                     <label for="j'accepte" class="check">J’accepte et j’ai  lu les conditions générales d’utilisations.</label>
                     <div class="flex justify-center m-auto">
-                        <button type="submit"  class="bg-Default/me/Gris px-8 py-4 my-7 text-base">Envoyer votre message</button>
+                        <button type="submit"  class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">Envoyer votre message</button>
                     </div>
                 </form>
             </div>
