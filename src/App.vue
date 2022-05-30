@@ -36,7 +36,10 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <main id="content" class=" bg-Default/me/Noir">
       <aside class=" relative flex flex-col gap-5 z-10">
-
+        <a href="http://"><Facebook /></a>
+        <a href="http://"><Instagram /></a>
+        <a href="http://"><Twitter /></a>
+        <a href="http://"><Youtube /></a>
       </aside>
     <Router-View />
   </main>
@@ -73,11 +76,15 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <script>
 import { MenuIcon, } from "@heroicons/vue/solid";
+import Facebook from "./components/icons/FacebookView.vue"
+import Instagram from "./components/icons/InstagramView.vue"
+import Twitter from "./components/icons/TwitterView.vue"
+import Youtube from "./components/icons/YoutubeView.vue"
 
 
 export default {
   name: "App",
-  components: { MenuIcon,},
+  components: { MenuIcon,Facebook,Instagram,Twitter,Youtube,},
 };
 
 </script>
