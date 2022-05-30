@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <nav class=" lg:flex lg:justify-between items-center">
       <div class="flex justify-between items-center">
       <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
-      <span class=" ">
+      <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
         <MenuIcon class=" text-white"></MenuIcon>
       </span>
       </div>
