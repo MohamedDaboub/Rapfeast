@@ -5,7 +5,81 @@
         <p class=" font-poppins text-base md:text-lg   ">Vous pouvez ici trouver tous nos différents artistes et réserver votre ticket depuis cette page</p>
     </div>
     <section>
-        
+        <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
+            <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
+                <cardach
+                    Artiste="David Aupry"
+                    image2="/public/img/Image7.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Samedi 9"
+                    Heure="20h30"></cardach>
+                <cardach
+                    Artiste="Leal Briard"
+                    image2="/public/img/Image8.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Samedi 9"
+                    Heure="15h30"></cardach>
+                <cardach
+                    Artiste="Mohamed Hakar"
+                    image2="/public/img/Image9.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Samedi 9"
+                    Heure="17h30"></cardach>
+            </div>
+        </div>
+        <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
+            <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
+                <cardach
+                    Artiste="Lucas Leroux"
+                    image2="/public/img/Image10.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Dimanche 10"
+                    Heure="20h30"></cardach>
+                <cardach
+                    Artiste="Ranger Corbin"
+                    image2="/public/img/Image11.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Dimanche 10"
+                    Heure="15h30"></cardach>
+                <cardach
+                    Artiste="Jacques Verreau"
+                    image2="/public/img/Image12.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Dimanche 10"
+                    Heure="17h30"></cardach>
+            </div>
+        </div>
+        <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
+            <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
+                <cardach
+                    Artiste="Gerard Cadieux"
+                    image2="/public/img/Image13.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Lundi 11"
+                    Heure="20h30"></cardach>
+                <cardach
+                    Artiste="Byron L'Anglais"
+                    image2="/public/img/Image3.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Lundi 11"
+                    Heure="15h30"></cardach>
+                <cardach
+                    Artiste="Donat Roy"
+                    image2="/public/img/Image14.webp" 
+                    prix="40.30"
+                    prixto="70"
+                    Jour="Lundi 11"
+                    Heure="17h30"></cardach>
+            </div>
+        </div>
     </section>
 </template>
 <script>
