@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-            <RouterLink class="px-8 py-4 bg-Default/me/Noir   text-white my-5 font-poppins " to="/Concert">Plus d’information </RouterLink>
+            <RouterLink class="px-8 py-4 bg-Default/me/Noir text-white my-5 font-poppins hover:bg-white hover:text-black " to="/Concert">Plus d’information </RouterLink>
             </div>
         </figcaption>
     </figure>
