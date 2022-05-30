@@ -14,7 +14,7 @@
         <div class="my-10">
             <h3>Domaine musical</h3>
             <div class="flex gap-2 md:mx-8 mx-2 my-3">
-                <fight class="w-6 h-8"></fight>
+                <fight class="w-5 h-6"></fight>
                 <p>RAP</p>
             </div>
         </div>
