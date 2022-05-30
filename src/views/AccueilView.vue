@@ -37,7 +37,8 @@
                     cette liste !</p>
                 <div>
                     <card class="w-full" image="/public/img/Image3.webp"
-                        nom="9 rappeurs dans un le meilleur rappeur De France  !" router="Programmation"></card>
+                        nom="9 rappeurs dans un le meilleur rappeur De France  !" 
+                        router="/Programmation"></card>
                 </div>
             </div>
             <div>
@@ -47,7 +48,8 @@
                     concerts disponibles en juillet de cette année</p>
                 <div>
                     <card class="w-full" image="/public/img/Image4.webp"
-                        nom="Cet été, il y a plus de 9 spectacles disponibles à besançon !"></card>
+                        nom="Cet été, il y a plus de 9 spectacles disponibles à besançon !"
+                        router="/Artistes"></card>
                 </div>
             </div>
             <div>
@@ -57,7 +59,8 @@
                     informations disponibles sur notre festival de cette année</p>
                 <div>
                     <card class="w-full" image="/public/img/Image5.webp"
-                        nom="Pour avoir plus Information sur notre festival RAP FEAST "></card>
+                        nom="Pour avoir plus Information sur notre festival RAP FEAST "
+                        router="/Concert"></card>
                 </div>
             </div>
             <div>
@@ -67,7 +70,8 @@
             </div>
             <div>
                 <card class="w-full" image="/public/img/Image6.webp"
-                    nom="Si vous avez la moindre question n’hésitez pas à nous contacter"></card>
+                    nom="Si vous avez la moindre question n’hésitez pas à nous contacter"
+                    router="/Contact"></card>
             </div>
         </div>
     </main>

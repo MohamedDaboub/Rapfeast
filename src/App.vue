@@ -12,24 +12,24 @@ import { RouterLink, RouterView } from 'vue-router'
         <MenuIcon class=" text-white"></MenuIcon>
       </span>
       </div>
-      <ul class="lg:flex  gap-6 lg:items-center text-white text-xl font-timmana mx-6 py-4" >
+      <ul class="lg:flex  gap-2 lg:items-center text-white text-xl font-timmana mx-6 py-4" >
         <li>
-          <RouterLink class="my-6 lg:my-0 " to="/">Home</RouterLink>
+          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
         </li>
         <li>
-          <RouterLink class="my-6 lg:my-0 " to="/Programmation">Programmation</RouterLink>
+          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/Programmation">Programmation</RouterLink>
         </li>
         <li>
-          <RouterLink class="my-6 lg:my-0 " to="/Artistes">Artistes</RouterLink>
+          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Artistes">Artistes</RouterLink>
         </li>
         <li>
-          <RouterLink class="my-6 lg:my-0 " to="/Festival">Festival</RouterLink>
+          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Festival">Festival</RouterLink>
         </li>
         <li>
-          <RouterLink class="my-6 lg:my-0 " to="/Contact">Contact</RouterLink>
+          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Contact">Contact</RouterLink>
         </li>
         <div class=" ">
-          <RouterLink class="px-8 bg-Default/me/Noir py-4 text-white font-poppins text-base my-6 lg:my-0 " to="/Artistes">ACHETER DES BILLETS</RouterLink>
+          <RouterLink class="px-8 bg-Default/me/Noir hover:bg-white hover:text-black  py-4 text-white font-poppins text-base my-6 lg:my-0 " to="/Artistes">ACHETER DES BILLETS</RouterLink>
         </div>
       </ul>
     </nav>
@@ -50,7 +50,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <label for="email" class="mx-5">
           <input type="text" id="email" name="email" value="" placeholder="exemple@Mail.com" class=" placeholder:text-center placeholder:text-lg border bg-white border-Default/me/Noir shadow-contact lg:w-[473px] h-9 text-black">
         </label>
-        <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white my-5  mx-5 ">Je m'abonne</button>
+        <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white my-5  mx-5 hover:bg-white hover:text-black focus:bg-blue-600 ">Je m'abonne</button>
         </div>
     </div>
     <div class=" grid text-center text-white text-xl font-timmana  lg:hidden">
@@ -85,7 +85,14 @@ import Youtube from "./components/icons/YoutubeView.vue"
 export default {
   name: "App",
   components: { MenuIcon,Facebook,Instagram,Twitter,Youtube,},
-};
+
+  data() {
+    return {
+      menuOuvert: false,
+    };
+  },
+}
+
 
 </script>
 

@@ -8,7 +8,8 @@ module.exports = {
       "colors": {
         "Default/me/J": "#fdd118",
         "Default/me/Noir": "#161616",
-        "Default/me/Gris": "#2d2d2d"
+        "Default/me/Gris": "#2d2d2d",
+        "Default/me/red": "#B91C1C"
       },
       "fontSize": {
         "base": "1rem",

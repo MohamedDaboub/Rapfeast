@@ -74,7 +74,7 @@
                 <cardach
                     Artiste="Donat Roy"
                     image2="/public/img/Image14.webp" 
-                    prix="40.30"
+                    prix="40"
                     prixto="70"
                     Jour="Lundi 11"
                     Heure="17h30"></cardach>
