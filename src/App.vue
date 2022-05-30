@@ -34,7 +34,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </ul>
     </nav>
   </header>
-  <main id="content">
+  <main id="content" class=" bg-Default/me/Noir">
+      <aside class=" relative flex flex-col gap-5 z-10">
+
+      </aside>
     <Router-View />
   </main>
   <footer class="bg-Default/me/Gris pt-10 px-10 flex-wrap ">
