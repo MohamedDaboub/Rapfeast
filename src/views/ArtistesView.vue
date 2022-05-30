@@ -4,4 +4,18 @@
         <h2 class="text-lg md:text-2xl   py-10 font-timmana">Les artistes des concerts </h2>
         <p class=" font-poppins text-base md:text-lg   ">Vous pouvez ici trouver tous nos différents artistes et réserver votre ticket depuis cette page</p>
     </div>
+    <section>
+        
+    </section>
 </template>
+<script>
+import cardach from "../components/CardachView.vue"
+export default {
+    props:{
+
+    },
+       
+    
+    components:{cardach,}
+}
+</script>
