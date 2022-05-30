@@ -9,10 +9,10 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="flex justify-between items-center">
       <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
       <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
-        <MenuIcon class=" text-white"></MenuIcon>
+        <MenuIcon class=" text-white" name="menu" onclick="Menu(this)"></MenuIcon>
       </span>
       </div>
-      <ul class="lg:flex  gap-2 lg:items-center text-white text-xl font-timmana mx-6 py-4" >
+      <ul class="lg:flex  gap-6 lg:items-center text-white text-xl font-timmana mx-6 py-4 z-[-1] lg:z-auto  lg:static absolute bg-Default/me/Gris w-full -left-6 right-0 lg:w-auto lg:py-0 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500" >
         <li>
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
         </li>
@@ -85,14 +85,13 @@ import Youtube from "./components/icons/YoutubeView.vue"
 export default {
   name: "App",
   components: { MenuIcon,Facebook,Instagram,Twitter,Youtube,},
-
-  data() {
-    return {
-      menuOuvert: false,
-    };
-  },
 }
 
+// function Menu(e){
+//     let list = document.querySelector('ul');
+//     e.name === 'menu' ? (e.name = "close", list.classList.add
+//     ('top-[80px]'), list.classList.add('opacity-100')): ((e.name = "menu") , list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+// }
 
 </script>
 

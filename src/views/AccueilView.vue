@@ -1,5 +1,5 @@
 <template>
-    <main class="text-white py-10">
+    <main class="text-white  py-10">
         <div class="mx-4 md:mx-8 lg:mx-10">
             <h1 class="text-xl  md:text-3xl font-timmana text-center py-7  ">N'attendez plus et venez passer une
                 agreable moment avec vos rappeurs preferes</h1>
