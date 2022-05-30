@@ -5,9 +5,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
     <header class=" bg-Default/me/Gris sticky top-0 drop-shadow-lg z-10 ">
     <a href="#content" class="sr-only focus:not-sr-only text-lg text-white"> Passez au contenu </a>
-    <nav class=" ">
-      <div class="">
-      <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="" alt=""></RouterLink>
+    <nav class=" lg:flex lg:justify-between items-center">
+      <div class="flex justify-between items-center">
+      <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
       <span class=" ">
         <MenuIcon class=" text-white"></MenuIcon>
       </span>
