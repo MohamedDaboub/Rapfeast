@@ -4,13 +4,13 @@
             <h1 class="text-xl  md:text-3xl font-timmana text-center py-7  ">N'attendez plus et venez passer une
                 agreable moment avec vos rappeurs preferes</h1>
             <div>
-                <img class="flex m-auto text-center w-11/12" src="../../public/img/Image1.webp" alt="image d'un festival rap feast">
+                <img class="flex m-auto text-center w-11/12" src="../../public/img/Image1.webp" alt="image de festival rap feast">
             </div>
             <flech class="flex text-center m-auto my-12 fill-white" />
             <h2 class="text-lg  md:text-2xl font-timmana text-center py-7  ">A propos de notre Festival</h2>
         </div>
         <div class=" relative">
-            <img class="md:w-full md:h-full h-[410px] w-full  " src="../../public/img/Image2.webp" alt="">
+            <img class="md:w-full md:h-full h-[410px] w-full  " src="../../public/img/Image2.webp" alt="image festival rap feast">
             <h1 class=" absolute left-[40%] top-[10%] md:text-4xl text-xl font-timmana">RAP FEAST</h1>
             <p class="absolute text-base mr-6 left-[15%] top-[30%] md:mr-44 font-poppins md:text-xl leading-tight">Et un
                 festival qui se passe chaque année à Besançon et dans lequel nous allons inviter les meilleurs rappeurs
