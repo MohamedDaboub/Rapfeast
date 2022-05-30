@@ -55,7 +55,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink class="my-2" to="/Contact">Contact</RouterLink>
     </div>
     <div>
-      <img src="../public/icon_svg/logo-site.svg" class="flex m-auto text-center w-36" alt="">
+      <img src="../public/icon_svg/logo-site.svg" class="flex m-auto text-center w-36" alt="logo du site">
     </div>
     <div class="font-timmana text-white grid lg:grid-cols-2 text-center py-4 ">
       <p class=" text-lg md:text-2xl my-5 lg:my-0 ">© RAP FEAST-2022</p>
