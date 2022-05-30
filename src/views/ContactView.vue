@@ -4,7 +4,7 @@
         <section class="md:mx-[25%] mx-4 my-10 font-poppins text-lg md:text-xl ">
             <div class="text-left flex gap-3 my-5 items-center  ">
                 <phone></phone>
-                <a href="tel:+03 81 41 08 09">Tél. 03 81 41 08 09</a>
+                <a href="tel:+04 81 47 98 09">Tél. 03 81 41 08 09</a>
             </div>
             <div class="text-left flex gap-3 my-5 items-center ">
                 <mail></mail>
