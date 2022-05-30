@@ -37,7 +37,7 @@
                     cette liste !</p>
                 <div>
                     <card class="w-full" image="/public/img/Image3.webp"
-                        nom="Plus de 9 rappeurs dans un le meilleur rappeur De France !" router="Programmation"></card>
+                        nom="9 rappeurs dans un le meilleur rappeur De France  !" router="Programmation"></card>
                 </div>
             </div>
             <div>
