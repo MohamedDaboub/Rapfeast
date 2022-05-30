@@ -36,7 +36,7 @@
                     concert pour vous en fonction de
                     cette liste !</p>
                 <div>
-                    <card class="w-full" image="/public/img-squirrel/Image3.webp"
+                    <card class="w-full" image="/public/img/Image3.webp"
                         nom="Plus de 9 rappeurs dans un le meilleur rappeur De France !" router="Programmation"></card>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Retrouvez tous nos
                     concerts disponibles en juillet de cette année</p>
                 <div>
-                    <card class="w-full" image="/public/img-squirrel/Image4.webp"
+                    <card class="w-full" image="/public/img/Image4.webp"
                         nom="Cet été, il y a plus de 9 spectacles disponibles à besançon !"></card>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Retrouvez tous les
                     informations disponibles sur notre festival de cette année</p>
                 <div>
-                    <card class="w-full" image="/public/img-squirrel/Image5.webp"
+                    <card class="w-full" image="/public/img/Image5.webp"
                         nom="Pour avoir plus Information sur notre festival RAP FEAST "></card>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     contact pour avoir plus d’information sur notre festival</p>
             </div>
             <div>
-                <card class="w-full" image="/public/img-squirrel/Image6.webp"
+                <card class="w-full" image="/public/img/Image6.webp"
                     nom="Si vous avez la moindre question n’hésitez pas à nous contacter"></card>
             </div>
         </div>
