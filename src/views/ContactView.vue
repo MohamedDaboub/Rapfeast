@@ -44,3 +44,12 @@
         </section>
     </div>
 </template>
+<script>
+import phone from "../components/icons/PhoneView.vue"
+import mail from "../components/icons/MailView.vue"
+
+export default {
+    name: "App",
+    components: { phone,mail  },
+}
+</script>
