@@ -76,10 +76,11 @@
 import flech from "../components/icons/FlechbasView.vue"
 import { TrendingUpIcon, } from "@heroicons/vue/solid";
 import cirecle from "../components/icons/CircleView.vue"
+import card from "../components/CardView.vue"
 
 
 export default {
     name: "App",
-    components: { flech,cirecle,TrendingUpIcon },
+    components: { flech,cirecle,TrendingUpIcon,card },
 };
 </script>
