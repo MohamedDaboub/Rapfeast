@@ -22,8 +22,8 @@
             <div class="absolute bottom-[0%] left-[38%] md:left-[45%] md:bottom-[5%] ">
                 <div class="relative">
                     <cirecle class="relative"></cirecle>
-                    <TrendingUpIcon class="absolute top-1/4 md:right-[15%] w-1/4 right-[20%] "></TrendingUpIcon>
-                    <p class="absolute top-1/4 left-[5%] ">Acheter <br> des billets</p>
+                    <TrendingUpIcon class="absolute top-1/4 md:right-[12%] w-1/4 right-[20%] "></TrendingUpIcon>
+                    <p class="absolute top-1/4 left-[8%] ">Acheter <br> des billets</p>
                 </div>
             </div>
         </div>
