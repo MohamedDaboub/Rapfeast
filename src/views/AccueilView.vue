@@ -12,13 +12,13 @@
         <div class=" relative">
             <img class="md:w-full md:h-full h-[410px] w-full  " src="../../public/img/Image2.webp" alt="">
             <h1 class=" absolute left-[40%] top-[10%] md:text-4xl text-xl font-timmana">RAP FEAST</h1>
-            <p class="absolute text-base mr-6 left-[15%] top-1/3 md:mr-44 font-poppins md:text-xl leading-tight">Et un
+            <p class="absolute text-base mr-6 left-[15%] top-[30%] md:mr-44 font-poppins md:text-xl leading-tight">Et un
                 festival qui se passe chaque année à Besançon et dans lequel nous allons inviter les meilleurs rappeurs
                 de France chaque année on a pu de 10000 visiteurs !</p>
-            <h3 class=" md:text-4xl text-xl font-timmana text-red-700  absolute top-[60%] left-1/4">Juillet</h3>
-            <h3 class=" md:text-4xl text-xl font-timmana  text-red-700 absolute top-[60%] right-1/4 ">2022</h3>
-            <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] left-[25%] md:left-[30%]">3 JOUR</h4>
-            <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] right-[25%] md:right-[30%]">9 GROUPE</h4>
+            <h3 class=" md:text-4xl text-xl font-timmana text-transparent  absolute top-[60%] left-1/4 effet-text">Juillet</h3>
+            <h3 class="md:text-4xl text-xl font-timmana  text-transparent  absolute top-[60%] right-1/4 effet-text ">2022</h3>
+            <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] md:bottom-[18%] left-[25%] md:left-[30%]">3 JOUR</h4>
+            <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] md:bottom-[18%] right-[25%] md:right-[30%]">9 GROUPE</h4>
             <div class="absolute bottom-[0%] left-[38%] md:left-[45%] md:bottom-[5%] ">
                 <div class="relative">
                     <cirecle class="relative fill-Default/me/red hover:fill-blue-700"></cirecle>

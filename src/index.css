@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .effet-text {
+        -webkit-text-stroke-color: red;
+        -webkit-text-stroke-color: #B91C1C;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    ,
+    .effet-shawdow {
+        text-shadow: #FFF 0px 0px 10px;
+    }
+}
