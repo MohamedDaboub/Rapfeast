@@ -31,8 +31,8 @@
     <div >
         <h2 class="font-timmana md:text-2xl text-lg my-10 text-center text-white">Galerie d’images de cette artiste </h2>
         <div class="justify-center text-white mx-4 md:mx-8 lg:mx-12 xl:mx-16">
-            <img class="py-10 m-auto" src="../../public/img-squirrel/Image17.webp" alt="">
-            <img class="py-10 m-auto" src="../../public/img-squirrel/Image18.webp" alt="">
+            <img class="py-10 m-auto" src="../../public/img/Image17.webp" alt="">
+            <img class="py-10 m-auto" src="../../public/img/Image18.webp" alt="">
         </div>
     </div>
 </template>
