@@ -9,21 +9,21 @@
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
                 <cardach
                     Artiste="David Aupry"
-                    image2="/public/img/Image7.webp" 
+                    image2="/img/Image7.webp" 
                     prix="44.50"
                     prixto="72"
                     Jour="Samedi 9"
                     Heure="20h30"></cardach>
                 <cardach
                     Artiste="Leal Briard"
-                    image2="/public/img/Image8.webp" 
+                    image2="/img/Image8.webp" 
                     prix="44.50"
                     prixto="72"
                     Jour="Samedi 9"
                     Heure="15h30"></cardach>
                 <cardach
                     Artiste="Mohamed Hakar"
-                    image2="/public/img/Image9.webp" 
+                    image2="/img/Image9.webp" 
                     prix="34.5"
                     prixto="62"
                     Jour="Samedi 9"
@@ -34,21 +34,21 @@
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
                 <cardach
                     Artiste="Lucas Leroux"
-                    image2="/public/img/Image10.webp" 
+                    image2="/img/Image10.webp" 
                     prix="34.5"
                     prixto="82"
                     Jour="Dimanche 10"
                     Heure="20h30"></cardach>
                 <cardach
                     Artiste="Ranger Corbin"
-                    image2="/public/img/Image11.webp" 
+                    image2="/img/Image11.webp" 
                     prix="34.5"
                     prixto="72"
                     Jour="Dimanche 10"
                     Heure="15h30"></cardach>
                 <cardach
                     Artiste="Jacques Verreau"
-                    image2="/public/img/Image12.webp" 
+                    image2="/img/Image12.webp" 
                     prix="34.5"
                     prixto="82"
                     Jour="Dimanche 10"
@@ -59,21 +59,21 @@
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
                 <cardach
                     Artiste="Gerard Cadieux"
-                    image2="/public/img/Image13.webp" 
+                    image2="/img/Image13.webp" 
                     prix="34.5"
                     prixto="92"
                     Jour="Lundi 11"
                     Heure="20h30"></cardach>
                 <cardach
                     Artiste="Byron L'Anglais"
-                    image2="/public/img/Image3.webp" 
+                    image2="/img/Image3.webp" 
                     prix="34.5"
                     prixto="100"
                     Jour="Lundi 11"
                     Heure="15h30"></cardach>
                 <cardach
                     Artiste="Donat Roy"
-                    image2="/public/img/Image14.webp" 
+                    image2="/img/Image14.webp" 
                     prix="34.5"
                     prixto="52"
                     Jour="Lundi 11"

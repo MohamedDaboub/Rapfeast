@@ -1,5 +1,5 @@
 <template>
-    <main class="text-black dark:text-white  py-10">
+    <main class="text-black dark:text-white dark:bg-Default/me/Gris py-10">
         <div class="mx-4 md:mx-8 lg:mx-10">
             <h1 class="text-xl  md:text-3xl font-timmana text-center py-7  ">N'attendez plus et venez passer une
                 agreable moment avec vos rappeurs preferes</h1>
@@ -41,7 +41,7 @@
                     concert pour vous en fonction de
                     cette liste !</p>
                 <div>
-                    <card class="w-full" image="/public/img/Image3.webp"
+                    <card class="w-full" image="/img/Image3.webp"
                         nom="9 rappeurs dans un le meilleur rappeur De France  !" 
                         router="/Programmation"></card>
                 </div>
@@ -52,7 +52,7 @@
                 <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Retrouvez tous nos
                     concerts disponibles en juillet de cette année</p>
                 <div>
-                    <card class="w-full" image="/public/img/Image4.webp"
+                    <card class="w-full" image="/img/Image4.webp"
                         nom="Cet été, il y a plus de 9 spectacles disponibles à besançon !"
                         router="/Artistes"></card>
                 </div>
@@ -63,7 +63,7 @@
                 <p class="text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Retrouvez tous les
                     informations disponibles sur notre festival de cette année</p>
                 <div>
-                    <card class="w-full" image="/public/img/Image5.webp"
+                    <card class="w-full" image="/img/Image5.webp"
                         nom="Pour avoir plus Information sur notre festival RAP FEAST "
                         router="/Concert"></card>
                 </div>
