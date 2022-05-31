@@ -3,8 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 </script>
 <template>
-    <header class=" bg-Default/me/Gris sticky top-0 drop-shadow-lg z-10 ">
-    <a href="#content" class="sr-only focus:not-sr-only text-lg text-white"> Passez au contenu </a>
+    <header class=" bg-Default/me/Gris light:bg-indigo-200  sticky top-0 drop-shadow-lg z-10 ">
+    <a href="#content" class="sr-only focus:not-sr-only text-lg text-white light:text-black"> Passez au contenu </a>
     <nav class=" lg:flex lg:justify-between items-center">
       <div class="flex justify-between items-center">
       <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
@@ -24,9 +24,9 @@ import { RouterLink, RouterView } from 'vue-router'
         leaveFrom="transform  translate-x-0 opacity-100"
         leaveTo="transform translate-x-full opacity-0"
       >
-      <ul id="menu" v-if="menuOuvert" class="lg:hidden text-white text-xl font-timmana mx-6 py-4 text-center" >
+      <ul id="menu" v-if="menuOuvert" class="lg:hidden text-white light:text-black text-xl font-timmana mx-6 py-4 text-center" >
         <li class="my-3"> 
-          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
+          <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/">Home</RouterLink>
         </li>
         <li class="my-3">
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/Programmation">Programmation</RouterLink>
@@ -45,7 +45,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </li>
       </ul>
       </Transition>
-      <ul class="lg:flex  gap-6 lg:items-center text-white text-xl font-timmana mx-6 py-4 hidden" >
+      <ul class="lg:flex  gap-6 lg:items-center text-white light:text-black  text-xl font-timmana mx-6 py-4 hidden" >
         <li class="my-3">
           <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
         </li>
@@ -67,7 +67,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </ul>    
     </nav>
   </header>
-  <main id="content" class=" bg-Default/me/Noir">
+  <main id="content" class=" bg-Default/me/Noir light:bg-indigo-50 light:text-black ">
       <aside class=" relative flex flex-col gap-5 z-10">
         <a href="https://www.facebook.com/"><Facebook  class=" fixed  right-1 py-5 lg:py-12"/></a>
         <span class="sr-only ">Facebook</span>

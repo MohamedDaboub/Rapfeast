@@ -42,7 +42,11 @@ module.exports = {
       "gridTemplateColumns": {
         "colonne2": "grid-cols-[repeat(auto-fit,minmax(285px,1fr))]"
       },
+      screens: {
+        light: { raw: '(prefers-color-scheme: light)' },
+      }
     },
+
   },
   plugins: [],
 }
