@@ -1,5 +1,5 @@
 <template>
-    <main class="text-white  py-10">
+    <main class="text-black dark:text-white  py-10">
         <div class="mx-4 md:mx-8 lg:mx-10">
             <h1 class="text-xl  md:text-3xl font-timmana text-center py-7  ">N'attendez plus et venez passer une
                 agreable moment avec vos rappeurs preferes</h1>
@@ -19,12 +19,12 @@
             <h3 class="md:text-4xl text-xl font-timmana  text-transparent  absolute top-[60%] right-1/4 effet-text ">2022</h3>
             <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] md:bottom-[18%] left-[25%] md:left-[30%]">3 JOUR</h4>
             <h4 class="text-lg md:text-2xl  font-timmana absolute bottom-[20%] md:bottom-[18%] right-[25%] md:right-[30%]">9 GROUPE</h4>
-            <div class="absolute bottom-[0%] left-[38%] md:left-[45%] md:bottom-[5%] ">
+            <div class="absolute bottom-[0%] left-[40%] md:left-[45%] md:bottom-[5%] ">
                 <div class="relative">
                     <RouterLink to="/Artistes">
                         <cirecle class="relative fill-Default/me/red hover:fill-blue-700"></cirecle>
-                        <TrendingUpIcon class="absolute top-1/4 md:right-[10%] w-1/4 right-[20%] "></TrendingUpIcon>
-                        <p class="absolute top-1/4 left-[10%] ">Acheter <br> des billets</p>
+                        <TrendingUpIcon class="absolute md:top-1/4 md:right-[10%] md:w-1/4 top-[28%] right-[25%] w-1/6 "></TrendingUpIcon>
+                        <p class="absolute top-1/4 left-[10%] text-sm ">Acheter <br> des billets</p>
                     </RouterLink>        
                 </div>
             </div>
