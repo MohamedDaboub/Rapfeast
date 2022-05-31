@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <a href="#content" class="sr-only focus:not-sr-only text-lg text-white light:text-black"> Passez au contenu </a>
     <nav class=" lg:flex lg:justify-between items-center">
       <div class="flex justify-between items-center">
-      <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
+      <RouterLink to="/"><img src="./assets/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
       <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
         <MenuIcon class=" text-white"  aria-controls="menu"
         :aria-expanded="menuOuvert"
@@ -98,7 +98,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink class="my-2" to="/Contact">Contact</RouterLink>
     </div>
     <div>
-      <img src="../public/icon_svg/logo-site.svg" class="flex m-auto text-center w-36" alt="logo du site">
+      <RouterLink to="/"><img src="./assets/icon_svg/logo-site.svg" class="flex m-auto text-center w-36" alt="logo du site"></RouterLink>
     </div>
     <div class="font-timmana text-white grid lg:grid-cols-2 text-center py-4 ">
       <p class=" text-lg md:text-2xl my-5 lg:my-0 ">© RAP FEAST-2022</p>
