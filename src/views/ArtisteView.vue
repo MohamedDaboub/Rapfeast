@@ -8,6 +8,7 @@
             <h3>Age</h3>
             <div class="flex gap-2 md:mx-8 mx-2 my-5">
                 <person class="mt-1"></person>
+                <span class="sr-only ">person</span>
                 <p>25 ans</p>
             </div>
         </div>
@@ -15,6 +16,7 @@
             <h3>Domaine musical</h3>
             <div class="flex gap-2 md:mx-8 mx-2 my-3">
                 <fight class="w-5 h-6"></fight>
+                <span class="sr-only ">fight</span>
                 <p>RAP</p>
             </div>
         </div>
@@ -22,9 +24,13 @@
             <h3>Reseaux sociaux</h3>
             <div class="flex gap-5 md:mx-8 mx-2 my-3">
                 <a href="https://www.facebook.com/"><Facebook class=" w-1/2 md:w-full "/></a>
+                <span class="sr-only ">Facebook</span>
                 <a href="http://instagram.com/"><Instagram class=" w-1/2 md:w-full"/></a>
+                <span class="sr-only ">Instagram</span>
                 <a href="https://twitter.com/"><Twitter class=" w-1/2 md:w-full "/></a>
+                <span class="sr-only ">Twitter</span>
                 <a href="https://www.youtube.com/"><Youtube class=" w-1/2 md:w-full "/></a>
+                <span class="sr-only ">Youtube</span>
             </div>
         </div>
     </div>

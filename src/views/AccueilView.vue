@@ -7,6 +7,7 @@
                 <img class="flex m-auto text-center w-11/12" src="../../public/img/Image1.webp" alt="image de festival rap feast">
             </div>
             <flech class="flex text-center m-auto my-12 fill-white" />
+            <span class="sr-only ">flech</span>
             <h2 class="text-lg  md:text-2xl font-timmana text-center py-7  ">A propos de notre Festival</h2>
         </div>
         <div class=" relative">
@@ -23,7 +24,9 @@
                 <div class="relative">
                     <RouterLink to="/Artistes">
                         <cirecle class="relative fill-Default/me/red hover:fill-blue-700"></cirecle>
+                        <span class="sr-only ">cirecle</span>
                         <TrendingUpIcon class="absolute md:top-1/4 md:right-[10%] md:w-1/4 top-[28%] right-[25%] w-1/6 "></TrendingUpIcon>
+                        <span class="sr-only ">TrendingUpIcon</span>
                         <p class="absolute top-1/4 left-[10%] text-sm ">Acheter <br> des billets</p>
                     </RouterLink>        
                 </div>

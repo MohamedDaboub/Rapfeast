@@ -69,10 +69,14 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <main id="content" class=" bg-Default/me/Noir">
       <aside class=" relative flex flex-col gap-5 z-10">
-        <a href="https://www.facebook.com/"><Facebook class=" fixed  right-1 py-5   lg:py-8"/></a>
-        <a href="http://instagram.com/"><Instagram class=" fixed right-1 py-12  lg:py-20"/></a>
-        <a href="https://twitter.com/"><Twitter class=" fixed right-1  py-20 lg:py-32"/></a>
-        <a href="https://www.youtube.com/"><Youtube class=" fixed right-1 py-28 lg:py-44 "/></a>
+        <a href="https://www.facebook.com/"><Facebook  class=" fixed  right-1 py-5 lg:py-12"/></a>
+        <span class="sr-only ">Facebook</span>
+        <a href="http://instagram.com/"><Instagram class=" fixed right-1 py-12  lg:py-24"/></a>
+        <span class="sr-only ">Instagram</span>
+        <a href="https://twitter.com/"><Twitter class=" fixed right-1  py-20 lg:py-36"/></a>
+        <span class="sr-only ">Twitter</span>
+        <a href="https://www.youtube.com/"><Youtube class=" fixed right-1 py-28 lg:py-48 "/></a>
+        <span class="sr-only ">Youtube</span>
       </aside>
     <Router-View />
   </main>
@@ -113,7 +117,7 @@ import Facebook from "./components/icons/FacebookView.vue"
 import Instagram from "./components/icons/InstagramView.vue"
 import Twitter from "./components/icons/TwitterView.vue"
 import Youtube from "./components/icons/YoutubeView.vue"
-import menu from "./components/MenuView.vue"
+
 
 
 export default {
