@@ -9,29 +9,62 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="flex justify-between items-center">
       <RouterLink to="/"><img src="../public/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
       <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
-        <MenuIcon class=" text-white" ></MenuIcon>
+        <MenuIcon class=" text-white"  aria-controls="menu"
+        :aria-expanded="menuOuvert"
+        @click="menuOuvert = !menuOuvert">
+        </MenuIcon>
+        <span class="sr-only ">Menu</span>
       </span>
       </div>
-      <ul class="lg:flex  gap-6 lg:items-center text-white text-xl font-timmana mx-6 py-4" >
-        <li>
+      <Transition
+        enter="transition duration-2000 ease-out"
+        enterFrom="transform translate-x-full opacity-0"
+        enterTo="transform translate-x-0 opacity-100"
+        leave="transition duration-1750 ease-out"
+        leaveFrom="transform  translate-x-0 opacity-100"
+        leaveTo="transform translate-x-full opacity-0"
+      >
+      <ul id="menu" v-if="menuOuvert" class="lg:hidden text-white text-xl font-timmana mx-6 py-4 text-center" >
+        <li class="my-3">
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
         </li>
-        <li>
+        <li class="my-3">
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/Programmation">Programmation</RouterLink>
         </li>
-        <li>
+        <li class="my-3">
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Artistes">Artistes</RouterLink>
         </li>
-        <li>
+        <li class="my-3">
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Festival">Festival</RouterLink>
         </li>
-        <li>
+        <li class="my-3">
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Contact">Contact</RouterLink>
         </li>
-        <div class=" ">
+        <li class=" ">
           <RouterLink class="px-8 bg-Default/me/Noir hover:bg-white hover:text-black  py-4 text-white font-poppins text-base my-6 lg:my-0 " to="/Artistes">ACHETER DES BILLETS</RouterLink>
-        </div>
+        </li>
       </ul>
+      </Transition>
+      <ul class="lg:flex  gap-6 lg:items-center text-white text-xl font-timmana mx-6 py-4 hidden" >
+        <li class="my-3">
+          <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
+        </li>
+        <li class="my-3">
+          <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/Programmation">Programmation</RouterLink>
+        </li>
+        <li class="my-3">
+          <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Artistes">Artistes</RouterLink>
+        </li>
+        <li class="my-3">
+          <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Festival">Festival</RouterLink>
+        </li>
+        <li class="my-3">
+          <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black " to="/Contact">Contact</RouterLink>
+        </li>
+        <li class=" ">
+          <RouterLink class="px-8 bg-Default/me/Noir hover:bg-white hover:text-black  py-4 text-white font-poppins text-base my-6 lg:my-0 " to="/Artistes">ACHETER DES BILLETS</RouterLink>
+        </li>
+      </ul>    
     </nav>
   </header>
   <main id="content" class=" bg-Default/me/Noir">
@@ -80,11 +113,17 @@ import Facebook from "./components/icons/FacebookView.vue"
 import Instagram from "./components/icons/InstagramView.vue"
 import Twitter from "./components/icons/TwitterView.vue"
 import Youtube from "./components/icons/YoutubeView.vue"
+import menu from "./components/MenuView.vue"
 
 
 export default {
   name: "App",
   components: { MenuIcon,Facebook,Instagram,Twitter,Youtube,},
+    data() {
+    return {
+      menuOuvert: false,
+    };
+    },
 
 }
 
