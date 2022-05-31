@@ -26,7 +26,7 @@
             <h3 class="text-xl md:text-3xl text-white text-center py-10 font-timmana">10 juillet 2022</h3>
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
             <cardpro
-                image1="/public/img/Image10.webp"
+                image1="../../public/img/Image10.webp"
                 nomart="Lucas Leroux "
                 nbrJour="10 "></cardpro>
             <cardpro

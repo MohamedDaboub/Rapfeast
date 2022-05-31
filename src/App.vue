@@ -25,7 +25,7 @@ import { RouterLink, RouterView } from 'vue-router'
         leaveTo="transform translate-x-full opacity-0"
       >
       <ul id="menu" v-if="menuOuvert" class="lg:hidden text-white text-xl font-timmana mx-6 py-4 text-center" >
-        <li class="my-3">
+        <li class="my-3"> 
           <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
         </li>
         <li class="my-3">
@@ -127,6 +127,7 @@ export default {
     return {
       menuOuvert: false,
     };
+    
     },
 
 }
