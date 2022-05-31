@@ -42,7 +42,7 @@
                     cette liste !</p>
                 <div>
                     <card class="w-full" image="/img/Image3.webp"
-                        nom="9 rappeurs dans un le meilleur rappeur De France  !" 
+                        nom="Plus de 9 rappeurs dans un le meilleur rappeur De France !" 
                         router="/Programmation"></card>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div>
-                <h2 class="text-lg  md:text-2xl font-timmana text-center py-7">Pour nous contact</h2>
+                <h2 class="text-lg  md:text-2xl font-timmana text-center py-7">Pour nous contacter</h2>
                 <p class=":text-base mx-7 md:mx-10 my-10 text-center md:text-lg font-poppins ">Si vous voulais nous
                     contact pour avoir plus d’information sur notre festival</p>
             </div>

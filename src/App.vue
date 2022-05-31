@@ -68,14 +68,14 @@ import { RouterLink, RouterView } from 'vue-router'
     </nav>
   </header>
   <main id="content" class=" bg-Default/me/Noir light:bg-indigo-50 light:text-black ">
-      <aside class=" relative flex flex-col gap-5 z-10">
-        <a href="https://www.facebook.com/"><Facebook  class=" fixed  right-1 py-5 lg:py-12"/></a>
+      <aside class=" relative flex flex-col z-10">
+        <a href="https://www.facebook.com/"><Facebook  class=" fixed  right-1 top-[15%] md:top-[15%]"/></a>
         <span class="sr-only ">Facebook</span>
-        <a href="http://instagram.com/"><Instagram class=" fixed right-1 py-12  lg:py-24"/></a>
+        <a href="http://instagram.com/"><Instagram class=" fixed right-1 top-[20%] md:top-[25%]"/></a>
         <span class="sr-only ">Instagram</span>
-        <a href="https://twitter.com/"><Twitter class=" fixed right-1  py-20 lg:py-36"/></a>
+        <a href="https://twitter.com/"><Twitter class=" fixed right-1  top-[25%] md:top-[35%]"/></a>
         <span class="sr-only ">Twitter</span>
-        <a href="https://www.youtube.com/"><Youtube class=" fixed right-1 py-28 lg:py-48 "/></a>
+        <a href="https://www.youtube.com/"><Youtube class=" fixed right-1 top-[30%] md:top-[45%] "/></a>
         <span class="sr-only ">Youtube</span>
       </aside>
     <Router-View />
@@ -129,6 +129,9 @@ export default {
     };
     
     },
+    beforeMount(){
+    this.$router.afterEach(() => (this.menuOuvert = false));
+  }
 
 }
 
