@@ -1,5 +1,5 @@
 <template>
-    <main class="text-black dark:text-white dark:bg-Default/me/Gris py-10">
+    <main class="text-black dark:text-white py-10">
         <div class="mx-4 md:mx-8 lg:mx-10">
             <h1 class="text-xl  md:text-3xl font-timmana text-center py-7  ">N'attendez plus et venez passer une
                 agreable moment avec vos rappeurs preferes</h1>
@@ -74,7 +74,7 @@
                     contact pour avoir plus d’information sur notre festival</p>
             </div>
             <div>
-                <card class="w-full" image="/public/img/Image6.webp"
+                <card class="w-full" image="/img/Image6.webp"
                     nom="Si vous avez la moindre question n’hésitez pas à nous contacter"
                     router="/Contact"></card>
             </div>
