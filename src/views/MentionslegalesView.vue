@@ -1,5 +1,5 @@
 <template>
-    <body class="mx-4 md:mx-8 lg:mx-10 py-10 text-center text-white light:text-black">
+    <body class="mx-4 md:mx-8 lg:mx-10 py-10 text-center text-text">
         <h1 class="text-xl md:text-3xl   py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth ">Mentions legales</h1>
         <section class="text-left font-poppins md:text-xl text-lg lg:mx-12 mx-4 md:mx-8 xl:mx-16 my-10">
                 <div class="my-10">

@@ -1,10 +1,10 @@
 <template>
-    <div class="mx-4 md:mx-8 lg:mx-12 py-10 text-white light:text-black text-center ">
+    <div class="mx-4 md:mx-8 lg:mx-12 py-10 text-text text-center ">
         <h1 class="text-xl md:text-3xl   py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth ">L'HISTOIRE DE NOTRE FESTIVAL</h1>
         <h2 class="text-lg md:text-2xl   py-10 font-timmana">Festival</h2>
         <p class=" font-poppins text-base md:text-lg ">Ici vous pourrez trouver l'histoire de notre festival qui va devenir une grande événement dans le futur</p>
     </div>
-    <section class="font-timmana text-white light:text-black text-lg md:text-2xl mx-4 md:mx-8 lg:mx-12 xl:mx-16 text-center">
+    <section class="font-timmana text-text text-lg md:text-2xl mx-4 md:mx-8 lg:mx-12 xl:mx-16 text-center">
         <flech class="flex  m-auto my-10 fill-white light:fill-black"></flech>
         <span class="sr-only ">flech</span>
         <h3 class="my-10" >Notre festival est un festival de <span class="text-red-900"> Rap</span> auquel nous invitons de grands <span class="text-red-900"> noms du Rap francais.</span> </h3>

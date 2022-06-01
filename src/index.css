@@ -17,3 +17,18 @@
         text-shadow: #000 0px 0px 20px;
     }
 }
+
+:root {
+    --couleur-text: #fff;
+    --couleur-fond: #161616;
+    --couleur-header: #2d2d2d;
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --couleur-text: #000;
+        --couleur-fond: #eef2ff;
+        --couleur-header: #C7D2FE;
+    }
+}

@@ -9,7 +9,10 @@ module.exports = {
         "Default/me/J": "#fdd118",
         "Default/me/Noir": "#161616",
         "Default/me/Gris": "#2d2d2d",
-        "Default/me/red": "#B91C1C"
+        "Default/me/red": "#B91C1C",
+        "text": "var(--couleur-text)",
+        "fond": "var(--couleur-fond)",
+        "header": "var(--couleur-header)",
       },
       "fontSize": {
         "base": "1rem",
@@ -22,9 +25,6 @@ module.exports = {
       "fontFamily": {
         "poppins": "Poppins",
         "timmana": "Timmana"
-      },
-      "dropshadow": {
-        "EFFET": "0px 0px 10px 0px rgba(255,255,255,0.75)"
       },
       "boxShadow": {
         "contact": "inset 7px 5px 10px 3px rgba(0,0,0,0.25)"
