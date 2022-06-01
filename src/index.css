@@ -12,4 +12,8 @@
     .effet-shawdow {
         text-shadow: #FFF 0px 0px 20px;
     }
+
+    .effet-shawdowinligth {
+        text-shadow: #000 0px 0px 20px;
+    }
 }

@@ -1,6 +1,6 @@
 <template>
-    <body class="mx-4 md:mx-8 lg:mx-10 py-10 text-center text-white">
-        <h1 class="text-xl md:text-3xl   py-10 font-timmana underline-offset-2 underline effet-shawdow ">Mentions legales</h1>
+    <body class="mx-4 md:mx-8 lg:mx-10 py-10 text-center text-white light:text-black">
+        <h1 class="text-xl md:text-3xl   py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth ">Mentions legales</h1>
         <section class="text-left font-poppins md:text-xl text-lg lg:mx-12 mx-4 md:mx-8 xl:mx-16 my-10">
                 <div class="my-10">
                         <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : www.rapfeast.com les informations suivantes : </p>

@@ -1,12 +1,12 @@
 <template>
-    <div class="mx-4 md:mx-8 lg:mx-10">
-        <h1 class="text-xl md:text-3xl text-white text-center py-10 font-timmana underline-offset-2 underline effet-shawdow">NOS PROGRAMMATION</h1>   
-        <h2 class="text-lg md:text-2xl text-white text-center py-10 font-timmana">Nos differents concerts</h2>
-        <p class=" font-poppins text-base md:text-lg text-center text-white ">Vous pouvez retrouver toutes les dates des concerts et leurs horaires au cours de ces 3 jours</p>
+    <div class="mx-4 md:mx-8 lg:mx-10 text-white light:text-black">
+        <h1 class="text-xl md:text-3xl text-center py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth">NOS PROGRAMMATION</h1>   
+        <h2 class="text-lg md:text-2xl text-center py-10 font-timmana">Nos differents concerts</h2>
+        <p class=" font-poppins text-base md:text-lg text-center  ">Vous pouvez retrouver toutes les dates des concerts et leurs horaires au cours de ces 3 jours</p>
     </div>
-    <section>
-        <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
-            <h3 class="text-xl md:text-3xl text-white text-center py-10 font-timmana">9 juillet 2022</h3>
+    <section class="text-white light:text-black">
+        <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10 ">
+            <h3 class="text-xl md:text-3xl  text-center py-10 font-timmana">9 juillet 2022</h3>
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
             <cardpro
                 image1="/img/Image7.webp"
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
-            <h3 class="text-xl md:text-3xl text-white text-center py-10 font-timmana">10 juillet 2022</h3>
+            <h3 class="text-xl md:text-3xl  text-center py-10 font-timmana">10 juillet 2022</h3>
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
             <cardpro
                 image1="/img/Image10.webp"
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
-            <h3 class="text-xl md:text-3xl text-white text-center py-10 font-timmana">11 juillet 2022</h3>
+            <h3 class="text-xl md:text-3xl text-center py-10 font-timmana">11 juillet 2022</h3>
             <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-8"  >
             <cardpro
                 image1="/img/Image13.webp"

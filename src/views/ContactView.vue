@@ -1,6 +1,6 @@
 <template>
-    <div class="mx-4 md:mx-8 lg:mx-10 py-10  text-white">
-        <h1 class="text-xl md:text-3xl   py-10 font-timmana text-center underline-offset-2 underline effet-shawdow ">ENVOYER UN MESSAGE</h1>
+    <div class="mx-4 md:mx-8 lg:mx-10 py-10  text-white light:text-black">
+        <h1 class="text-xl md:text-3xl   py-10 font-timmana text-center underline-offset-2 underline effet-shawdow light:effet-shawdowinligth ">ENVOYER UN MESSAGE</h1>
         <section class="md:mx-[25%] mx-4 my-10 font-poppins text-lg md:text-xl ">
             <div class="text-left flex gap-3 my-5 items-center  ">
                 <phone></phone>

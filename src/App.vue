@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="flex justify-between items-center">
       <RouterLink to="/"><img src="./assets/icon_svg/logo-site.svg" class="w-32 p-4" alt="Logo du site"></RouterLink>
       <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
-        <MenuIcon class=" text-white"  aria-controls="menu"
+        <MenuIcon class=" text-white light:text-black"  aria-controls="menu"
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert">
         </MenuIcon>
@@ -69,7 +69,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <main id="content" class=" bg-Default/me/Noir light:bg-indigo-50 light:text-black ">
       <aside class=" relative flex flex-col z-10">
-        <a href="https://www.facebook.com/"><Facebook  class=" fixed  right-1 top-[15%] md:top-[15%]"/></a>
+        <a href="https://www.facebook.com/"><Facebook  class=" fixed   right-1 top-[15%] md:top-[15%]"/></a>
         <span class="sr-only ">Facebook</span>
         <a href="http://instagram.com/"><Instagram class=" fixed right-1 top-[20%] md:top-[25%]"/></a>
         <span class="sr-only ">Instagram</span>
@@ -80,17 +80,17 @@ import { RouterLink, RouterView } from 'vue-router'
       </aside>
     <Router-View />
   </main>
-  <footer class="bg-Default/me/Gris pt-10 px-10 flex-wrap ">
-    <div class="text-white flex flex-col md:flex   gap-7 items-center">
+  <footer class="bg-Default/me/Gris light:bg-indigo-200 pt-10 px-10 flex-wrap ">
+    <div class="text-white light:text-black flex flex-col md:flex   gap-7 items-center">
       <p class="font-timmana xl:text-2xl text-lg">Recevoir notre actualite par newsletter :</p>
       <div class="  sm:flex lg:gap-14 items-center"> 
         <label for="email" class="mx-5">
           <input type="text" id="email" name="email" value="" placeholder="exemple@Mail.com" class=" placeholder:text-center placeholder:text-lg border bg-white border-Default/me/Noir shadow-contact lg:w-[473px] h-9 text-black">
         </label>
-        <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white my-5  mx-5 hover:bg-white hover:text-black focus:bg-blue-600 ">Je m'abonne</button>
+        <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white light:border-Default/me/Gris my-5  mx-5 hover:bg-white hover:text-black focus:bg-blue-600 ">Je m'abonne</button>
         </div>
     </div>
-    <div class=" grid text-center text-white text-xl font-timmana  lg:hidden">
+    <div class=" grid text-center text-white light:text-black text-xl font-timmana  lg:hidden">
       <RouterLink class="my-2" to="/">Home</RouterLink>
       <RouterLink class="my-2" to="/Programmation">Programmation</RouterLink>
       <RouterLink class="my-2" to="/Artistes">Artistes</RouterLink>
@@ -100,7 +100,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div>
       <RouterLink to="/"><img src="./assets/icon_svg/logo-site.svg" class="flex m-auto text-center w-36" alt="logo du site"></RouterLink>
     </div>
-    <div class="font-timmana text-white grid lg:grid-cols-2 text-center py-4 ">
+    <div class="font-timmana text-white light:text-black grid lg:grid-cols-2 text-center py-4 ">
       <p class=" text-lg md:text-2xl my-5 lg:my-0 ">© RAP FEAST-2022</p>
       <div class=" text-xl gap-7 mt-1 ">
         <RouterLink class=" " to="/Contact">Contact</RouterLink>

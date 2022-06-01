@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-xl md:text-3xl text-white text-center py-10 font-timmana underline-offset-8 underline effet-shawdow">Style guide du site RAP FEAST</h1>
+    <h1 class="text-xl md:text-3xl text-white text-center py-10 font-timmana underline-offset-8 underline effet-shawdow light:effet-shawdowinligth">Style guide du site RAP FEAST</h1>
     <div>
         <h2 class="text-lg md:text-2xl text-white text-center py-5 font-timmana">Couleurs</h2>
         <div class="flex justify-center gap-5 py-10 mx-4">
