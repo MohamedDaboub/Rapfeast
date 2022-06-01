@@ -59,6 +59,15 @@
     </section>
 </template>
 <script>
+import { 
+    getFirestore, 
+    collection, 
+    doc, 
+    addDoc, 
+    updateDoc, 
+    deleteDoc, 
+    onSnapshot
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
 import cardpro from "../components/CardproView.vue"
 export default {
     props:{

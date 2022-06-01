@@ -9,6 +9,7 @@ import ArtisteView from '../views/ArtisteView.vue'
 import MentionslegalesView from '../views/MentionslegalesView.vue'
 import StyleguideView from '../views/Style-guideView.vue'
 import page404 from '../views/404View.vue'
+import ListeView from '../views/listes-artistes/ListeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,7 @@ const router = createRouter({
     { path: '/Artiste', name: 'ArtisteView', component: ArtisteView },
     { path: '/Mentionslegales', name: 'MentionslegalesView', component: MentionslegalesView },
     { path: '/styleguide', name: 'StyleguideView', component: StyleguideView },
+    { path: '/Liste', name: 'ListeView', component: ListeView },
     { path: '/:pathMatch(.*)*', name: 'page404', component: page404 },
 
   ],
