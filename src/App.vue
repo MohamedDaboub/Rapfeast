@@ -69,13 +69,13 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
   <main id="content" class=" bg-Default/me/Noir bg-fond ">
       <aside class=" relative flex flex-col z-10">
-        <a href="https://www.facebook.com/"><Facebook  class=" fixed   right-1 top-[15%] md:top-[15%]"/></a>
+        <a href="https://www.facebook.com/"><Facebook  class=" fixed  hover:animate-[spin_1000ms_2]  right-1 top-[15%] md:top-[15%]"/></a>
         <span class="sr-only ">Facebook</span>
-        <a href="http://instagram.com/"><Instagram class=" fixed right-1 top-[20%] md:top-[25%]"/></a>
+        <a href="http://instagram.com/"><Instagram class=" fixed hover:animate-[spin_1000ms_2] right-1 top-[20%] md:top-[25%]"/></a>
         <span class="sr-only ">Instagram</span>
-        <a href="https://twitter.com/"><Twitter class=" fixed right-1  top-[25%] md:top-[35%]"/></a>
+        <a href="https://twitter.com/"><Twitter class=" fixed right-1 hover:animate-[spin_1000ms_2]  top-[25%] md:top-[35%]"/></a>
         <span class="sr-only ">Twitter</span>
-        <a href="https://www.youtube.com/"><Youtube class=" fixed right-1 top-[30%] md:top-[45%] "/></a>
+        <a href="https://www.youtube.com/"><Youtube class=" fixed right-1 hover:animate-[spin_2000ms_2] top-[30%] md:top-[45%] "/></a>
         <span class="sr-only ">Youtube</span>
       </aside>
     <Router-View />

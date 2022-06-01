@@ -6,7 +6,7 @@
             <div>
                 <img class="flex m-auto text-center w-11/12" src="../../public/img/Image1.webp" alt="image de festival rap feast">
             </div>
-            <flech class="flex text-center m-auto my-12 fill-white light:fill-black" />
+            <flech class="flex text-center m-auto my-12 fill-white light:fill-black  motion-safe:animate-bounce" />
             <span class="sr-only ">flech</span>
             <h2 class="text-lg  md:text-2xl font-timmana text-center py-7  ">A propos de notre Festival</h2>
         </div>

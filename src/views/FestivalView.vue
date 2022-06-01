@@ -5,12 +5,12 @@
         <p class=" font-poppins text-base md:text-lg ">Ici vous pourrez trouver l'histoire de notre festival qui va devenir une grande événement dans le futur</p>
     </div>
     <section class="font-timmana text-text text-lg md:text-2xl mx-4 md:mx-8 lg:mx-12 xl:mx-16 text-center">
-        <flech class="flex  m-auto my-10 fill-white light:fill-black"></flech>
+        <flech class="flex  m-auto my-10 fill-white light:fill-black  motion-safe:animate-bounce"></flech>
         <span class="sr-only ">flech</span>
-        <h3 class="my-10" >Notre festival est un festival de <span class="text-red-900"> Rap</span> auquel nous invitons de grands <span class="text-red-900"> noms du Rap francais.</span> </h3>
+        <h3 class="my-10" >Notre festival est un festival de <span class="text-red-600"> Rap</span> auquel nous invitons de grands <span class="text-red-600"> noms du Rap francais.</span> </h3>
         <fight  class="flex text-center m-auto my-10 w-52 h-52"></fight>
         <span class="sr-only ">fight</span>
-        <h3 class="my-10">Pouvez acheter votre ticket a partir de <span class="text-red-900"> 30€</span></h3>
+        <h3 class="my-10">Pouvez acheter votre ticket a partir de <span class="text-red-600"> 30€</span></h3>
         <ticket class="my-10" ></ticket>
         <span class="sr-only ">ticket</span>
         <h3 class="my-10">Ou nous trouver ?</h3>
