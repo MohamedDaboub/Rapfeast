@@ -11,6 +11,7 @@ import StyleguideView from '../views/Style-guideView.vue'
 import page404 from '../views/404View.vue'
 import ListeView from '../views/listes-artistes/ListeView.vue'
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

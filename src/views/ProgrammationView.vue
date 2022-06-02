@@ -11,15 +11,15 @@
             <cardpro
                 image1="/img/Image7.webp"
                 nomart="David Aupry"
-                nbrJour="9 "></cardpro>
+                nbrJour="9 juillet 2022"></cardpro>
             <cardpro
                 image1="/img/Image8.webp"
                 nomart="Leal Briard"
-                nbrJour="9 "></cardpro>
+                nbrJour="9 juillet 2022"></cardpro>
             <cardpro
                 image1="/img/Image9.webp"
                 nomart="Mohamed Hakar"
-                nbrJour="9 "></cardpro>
+                nbrJour="9 juillet 2022"></cardpro>
             </div>
         </div>
         <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
@@ -28,15 +28,15 @@
             <cardpro
                 image1="/img/Image10.webp"
                 nomart="Lucas Leroux "
-                nbrJour="10 "></cardpro>
+                nbrJour="10 juillet 2022"></cardpro>
             <cardpro
                 image1="/img/Image11.webp"
                 nomart="Ranger Corbin"
-                nbrJour="10 "></cardpro>
+                nbrJour="10 juillet 2022"></cardpro>
             <cardpro
                 image1="/img/Image12.webp"
                 nomart="Jacques Verreau"
-                nbrJour="10 "></cardpro>
+                nbrJour="10 juillet 2022"></cardpro>
             </div>
         </div>
         <div class="mx-4 md:mx-8 lg:mx-10 xl:mx-12 py-10">
@@ -45,15 +45,15 @@
             <cardpro
                 image1="/img/Image13.webp"
                 nomart="Gerard Cadieux"
-                nbrJour="11 "></cardpro>
+                nbrJour="11 juillet 2022"></cardpro>
             <cardpro
                 image1="/img/Image3.webp"
                 nomart="Byron L'Anglais"
-                nbrJour="11 "></cardpro>
+                nbrJour="11 juillet 2022"></cardpro>
             <cardpro
                 image1="/img/Image14.webp"
                 nomart="Donat Roy"
-                nbrJour="11 "></cardpro>
+                nbrJour="11 juillet 2022"></cardpro>
             </div>
         </div>
     </section>

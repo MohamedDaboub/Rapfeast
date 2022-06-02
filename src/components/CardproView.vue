@@ -1,10 +1,10 @@
 <template>
     <figure class="bg-Default/me/Gris">
-        <img class="my-4 text-center flex m-auto w-11/12" :src="image1" alt="image de l'artiste">
+        <img class="my-4 text-center flex m-auto w-11/12 p-4" :src="image1" alt="image de l'artiste">
         <figcaption>
             <div class=" relative flex flex-col text-white text-3xl font-timmana mx-6 my-6">
                 <h3 class="   ">{{ nomart }}</h3>
-                <h4 class="   ">{{ nbrJour }}juillet 2022</h4>
+                <h4 class="   ">{{ nbrJour }}</h4>
                 <div class="w-12 grid place-items-center absolute  right-2 h-12  bg-Default/me/Noir rounded-full">
                     <heart  />
                 </div>
