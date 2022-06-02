@@ -1,7 +1,7 @@
 <template>
           <form enctype="multipart/form-data" 
             @submit.prevent="createParticipant">
-          <h6>Nouveau Artistes</h6>
+          <h6 class="text-xl md:text-3xl text-center py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth text-text">Nouveau Artistes</h6>
           <div class="grid grid-cols-2">
             <div>
               <div class="">
@@ -13,24 +13,24 @@
           <div>
             <div class="flex gap-5 my-10">
               <div class="">
-                <span class="">Nom</span>
+                <span class="text-white">Nom</span>
               </div>
               <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="nom" required />
             </div>
               <div class="flex gap-5">
                   <div class="">
-                      <span class="" >Date de concert</span>
+                      <span class="text-white" >Date de concert</span>
                   </div>
                   <input type="date" class=" text-black h-8 border-2 border-Default/me/Gris rounded " v-model="date"  format="dd/mm/yyyy"  required />
               </div>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                  <span class="input-group-text">Photo</span>
+            <div class="">
+              <div class="">
+                  <span class="text-white">Photo</span>
               </div>
-              <div class="custom-file">
-                  <input type="file" class="custom-file-input" ref="file" id="file" 
+              <div class="">
+                  <input type="file" class="text-white" ref="file" id="file" 
                     @change="previewImage">
-                  <label class="custom-file-label" for="file">Sélectionner l'image</label>
+                  <label class="text-white" for="file">Sélectionner l'image</label>
               </div>
             </div>
           </div>
