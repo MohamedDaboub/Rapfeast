@@ -6,7 +6,7 @@
         <hr/>
         <div class="flex justify-between lg:mx-16 mx-6 my-10 items-center py-10">
           <h2 class="text-lg md:text-2xl text-center font-timmana">Creer un nouveau Artiste</h2>
-          <plus></plus>
+          <RouterLink class="my-2" to="/Creat"><plus></plus></RouterLink>
         </div>
         <form>
           <h6>Nouveau Artistes</h6>
