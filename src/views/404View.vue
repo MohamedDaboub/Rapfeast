@@ -13,8 +13,9 @@
             <button type="submit" class="bg-Default/me/Noir px-8 py-4 my-5">Rechercher</button>
         </form>
     </div>
+    <input type="text" id="chanrecher" @keyup="FunctionRecherche()" class="flex justify-center m-auto w-1/2 rounded-md h-10 border-2 border-Default/me/Gris shadow-contact font-poppins" placeholder="Saisissez le nom de la page que vous recherchez" title="recherchez" />
     <div class="py-10">
-        <ul class="flex flex-col text-text text-base font-poppins">
+        <ul class="flex flex-col text-text text-base font-poppins" id="meslien">
         <li class=" mx-auto text-center flex  ">
           <RouterLink class="bg-Default/me/Gris my-5 px-8 py-4 " to="/">Home</RouterLink>
         </li>
@@ -33,3 +34,26 @@
         </ul>
     </div>
 </template>
+<script>
+export default {
+name:"Page404",
+methods:{
+FunctionRecherche() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('chanrecher');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("meslien");
+    li = ul.getElementsByTagName('li');
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+        } else {
+        li[i].style.display = "none";
+        }
+    }
+  }
+}
+};
+</script>
