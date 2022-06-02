@@ -16,13 +16,13 @@ import { RouterLink, RouterView } from 'vue-router'
         <span class="sr-only ">Menu</span>
       </span>
       </div>
-      <Transition
-        enter="transition duration-2000 ease-out"
-        enterFrom="transform translate-x-full opacity-0"
-        enterTo="transform translate-x-0 opacity-100"
-        leave="transition duration-1750 ease-out"
-        leaveFrom="transform  translate-x-0 opacity-100"
-        leaveTo="transform translate-x-full opacity-0"
+      <transition
+        enter-active-class="transition duration-100 ease-out"
+        enter-from-class="transform scale-95 opacity-0"
+        enter-to-class="transform scale-100 opacity-100"
+        leave-active-class="transition duration-75 ease-out"
+        leave-from-class="transform scale-100 opacity-100"
+        leave-to-class="transform scale-95 opacity-0"
       >
       <ul id="menu" v-if="menuOuvert" class="lg:hidden text-text text-xl font-timmana mx-6 py-4 text-center" >
         <li class="my-3"> 
@@ -44,7 +44,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink class="px-8 bg-Default/me/Noir hover:bg-white hover:text-black  py-4 text-white font-poppins text-base my-6 lg:my-0 " to="/Artistes">ACHETER DES BILLETS</RouterLink>
         </li>
       </ul>
-      </Transition>
+      </transition>
       <ul class="lg:flex  gap-6 lg:items-center text-text  text-xl font-timmana mx-6 py-4 hidden" >
         <li class="my-3">
           <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm hover:bg-white hover:text-black" to="/">Home</RouterLink>
