@@ -14,13 +14,13 @@
             <div class="">
               <span class="">Nom</span>
             </div>
-            <input type="text" class="text-black" v-model="nom" required />
+            <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="nom" required />
           </div>
             <div class="flex gap-5">
                 <div class="">
                     <span class="" >Date de concert</span>
                 </div>
-                <input type="date" class=" text-black" v-model="date"  format="dd/mm/yyyy"  required />
+                <input type="date" class=" text-black h-8 border-2 border-Default/me/Gris rounded " v-model="date"  format="dd/mm/yyyy"  required />
         
             <button class="" type="button" @click='createArtiste()' title="Création">
               <modif class="fill-white" />
@@ -34,14 +34,14 @@
                 <thead>
                     <tr>                      
                         <th scope="">
-                          <div class="">Liste des Artiste actuels</div>                          
+                          <div class="my-10">Liste des Artiste actuels</div>                          
                           <span class="">
                             <div class="flex gap-4 my-10" >
                                 <div class="">
                                   <span class="" >Filtrage</span>
                                 </div>
-                                <input type="text" class="text-black" v-model="filter"/>
-                                <button class="bg-black" type="submit" title="Création">
+                                <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="filter"/>
+                                <button class="" type="submit" title="Création">
                                   <Search class="fill-white" />
                                 </button>
                               </div>
@@ -53,18 +53,20 @@
                     <tr v-for='Artiste in filterByName' :key='Artiste.id'>
                         <td>
                           <form>
-                            <div class="  ">    
+                            <div class="grid grid-cols-4   ">    
                               <div class="flex flex-col">
                                 <span class="">Nom</span>
                               </div>
-                              <input type="text" class="text-black" v-model="Artiste.nom" required />
-                              <input type="date" class="text-black" v-model="Artiste.date" required />
+                              <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.nom" required />
+                              <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
+                              <div>
                               <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
                                 <modif class="fill-white"/>
                               </button>
                               <button class="" type="button" @click.prevent="deleteArtiste(Artiste)" title="Suppression">
                                 <trach class="fill-white"/>
                               </button>
+                              </div>
                             </div>
                           </form>
                         </td>
