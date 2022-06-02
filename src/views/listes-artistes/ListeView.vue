@@ -40,7 +40,7 @@
                               <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
                               <div>
                               <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
-                                <modif class="fill-white"/>
+                                <edit class="fill-white"/>
                               </button>
                               <button class="" type="button" @click.prevent="deleteArtiste(Artiste)" title="Suppression">
                                 <trach class="fill-white"/>
@@ -70,6 +70,7 @@ import Search from "../../components/icons/SeachView.vue"
 import trach from "../../components/icons/TrashView.vue"
 import card from "../../components/CardproView.vue"
 import plus from "../../components/icons/PlusView.vue"
+import edit from "../../components/icons/EditView.vue"
 
 import { 
     getFirestore,   // Obtenir le Firestore
@@ -100,7 +101,7 @@ export default {
 
     },
         
-    components:{modif,Search,trach,card,plus},
+    components:{modif,Search,trach,card,plus,edit},
     data(){ // Données de la vue
             return{                
                 nom:null, // Pour la création d'un nouveau pays
