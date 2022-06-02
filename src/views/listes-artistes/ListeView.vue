@@ -1,9 +1,13 @@
 <template>
    <div class=" text-white mx-4 py-5 text-text">
         <div class="text-xl md:text-3xl text-center py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth    ">
-            <h5>Liste des Artistes</h5>
+            <h1>Liste des Artistes</h1>
         </div>    
         <hr/>
+        <div class="flex justify-between lg:mx-16 mx-6 my-10 items-center py-10">
+          <h2 class="text-lg md:text-2xl text-center font-timmana">Creer un nouveau Artiste</h2>
+          <plus></plus>
+        </div>
         <form>
           <h6>Nouveau Artistes</h6>
           <div class="flex gap-5 my-10">
@@ -84,6 +88,7 @@ import modif from "../../components/icons/SaveView.vue"
 import Search from "../../components/icons/SeachView.vue"
 import trach from "../../components/icons/TrashView.vue"
 import card from "../../components/CardproView.vue"
+import plus from "../../components/icons/PlusView.vue"
 
 import { 
     getFirestore,   // Obtenir le Firestore
@@ -114,7 +119,7 @@ export default {
 
     },
         
-    components:{modif,Search,trach,card},
+    components:{modif,Search,trach,card,plus},
     data(){ // Données de la vue
             return{                
                 nom:null, // Pour la création d'un nouveau pays
