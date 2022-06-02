@@ -13,15 +13,11 @@
                     <span class="" >Date de concert</span>
                 </div>
                 <input type="date" class=" text-black h-8 border-2 border-Default/me/Gris rounded " v-model="date"  format="dd/mm/yyyy"  required />
-        
-            <button class="" type="button" @click='createArtiste()' title="Création">
-              <modif class="fill-white" />
-            </button>
             </div>
 
         </form>
         <div class="flex justify-center mx-auto text-white gap-10 font-poppins">   
-            <button type="submit" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
+            <button type="submit" @click='createArtiste()' title="Création" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
               Créer
             </button>
             <button class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black" >
