@@ -8,27 +8,6 @@
           <h2 class="text-lg md:text-2xl text-center font-timmana">Creer un nouveau Artiste</h2>
           <RouterLink class="my-2" to="/Creat"><plus></plus></RouterLink>
         </div>
-        <form>
-          <h6>Nouveau Artistes</h6>
-          <div class="flex gap-5 my-10">
-            <div class="">
-              <span class="">Nom</span>
-            </div>
-            <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="nom" required />
-          </div>
-            <div class="flex gap-5">
-                <div class="">
-                    <span class="" >Date de concert</span>
-                </div>
-                <input type="date" class=" text-black h-8 border-2 border-Default/me/Gris rounded " v-model="date"  format="dd/mm/yyyy"  required />
-        
-            <button class="" type="button" @click='createArtiste()' title="Création">
-              <modif class="fill-white" />
-            </button>
-            </div>
-
-        </form>
-
         <div class="">
             <table class="">
                 <thead>
