@@ -6,15 +6,23 @@
         <hr/>
         <form>
           <h6>Nouveau Artistes</h6>
-          <div class="flex  my-10">
+          <div class="flex gap-5 my-10">
             <div class="">
               <span class="">Nom</span>
             </div>
             <input type="text" class="text-black" v-model="nom" required />
+          </div>
+            <div class="flex gap-5">
+                <div class="">
+                    <span class="" >Date de concert</span>
+                </div>
+                <input type="date" class=" text-black" v-model="date"  format="dd/mm/yyyy"  required />
+        
             <button class="" type="button" @click='createArtiste()' title="Création">
               <modif class="fill-white" />
             </button>
-          </div>
+            </div>
+
         </form>
 
         <div class="">
@@ -38,7 +46,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for='Artiste in orderByName' :key='Artiste.id'>
+                    <tr v-for='Artiste in filterByName' :key='Artiste.id'>
                         <td>
                           <form>
                             <div class="  ">    
@@ -46,6 +54,7 @@
                                 <span class="">Nom</span>
                               </div>
                               <input type="text" class="text-black" v-model="Artiste.nom" required />
+                              <input type="date" class="text-black" v-model="Artiste.date" required />
                               <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
                                 <modif class="fill-white"/>
                               </button>
@@ -60,7 +69,7 @@
             </table>
         </div>
     </div>
-    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 py-10 mx-10">
+    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 py-10 mx-10">
         <div v-for="artiste in listeArtistesSynchro" :key="artiste.id">
             <card
                 :nomart="artiste.nom"
@@ -76,19 +85,27 @@ import Search from "../../components/icons/SeachView.vue"
 import trach from "../../components/icons/TrashView.vue"
 import card from "../../components/CardproView.vue"
 
-// Bibliothèque Firestore : import des fonctions
 import { 
-    getFirestore, 
-    collection, 
-    doc, 
-    getDocs, 
-    addDoc, 
-    updateDoc, 
-    deleteDoc, 
-    onSnapshot,
-    query,
-    orderBy,
-} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+    getFirestore,   // Obtenir le Firestore
+    collection,     // Utiliser une collection de documents
+    doc,            // Obtenir un document par son id
+    getDocs,        // Obtenir la liste des documents d'une collection
+    addDoc,         // Ajouter un document à une collection
+    updateDoc,      // Mettre à jour un document dans une collection
+    deleteDoc,      // Supprimer un document d'une collection
+    onSnapshot,     // Demander une liste de documents d'une collection, en les synchronisant
+    query,          // Permet d'effectuer des requêtes sur Firestore
+    orderBy         // Permet de demander le tri d'une requête query
+    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+
+// Cloud Storage : import des fonctions
+import { 
+    getStorage,             // Obtenir le Cloud Storage
+    ref,                    // Pour créer une référence à un fichier à uploader
+    getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
+    uploadString,           // Permet d'uploader sur le Cloud Storage une image en Base64
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
 
 
 export default {
@@ -103,6 +120,7 @@ export default {
                 nom:null, // Pour la création d'un nouveau pays
                 listeArtistesSynchro:[], // Liste des pays synchronisée - collection pays de Firebase
                 filter:'',
+                date:null
             }
         },
         computed:{
@@ -153,7 +171,8 @@ export default {
                 // Les champs à mettre à jour
                 // Sauf le id qui est créé automatiquement
                 const docRef = await addDoc(dbArtiste,{
-                    nom: this.nom
+                    nom: this.nom,
+                    date: this.date
                 })
                 console.log('document créé avec le id : ', docRef.id);
              },
@@ -166,7 +185,8 @@ export default {
                 // On passe en paramètre format json
                 // Les champs à mettre à jour
                 await updateDoc(docRef, {
-                    nom: Artiste.nom
+                    nom: Artiste.nom,
+
                 }) 
              },
             async deleteArtiste(Artiste){
@@ -178,6 +198,10 @@ export default {
                 // Suppression du pays référencé
                 await deleteDoc(docRef);
              },
+            dateFr(d){
+              let date = d.split('-');
+              return date[2]+'/'+date[1]+'/'+date[0];
+        }
         },
 
 }
