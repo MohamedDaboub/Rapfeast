@@ -20,11 +20,11 @@
             </div>
 
         </form>
-        <div class="">   
-            <button type="submit" class="">
+        <div class="flex justify-center mx-auto text-white gap-10 font-poppins">   
+            <button type="submit" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
               Créer
             </button>
-            <button class="" >
+            <button class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black" >
               <router-link to="/Liste" >Cancel</router-link>
             </button>
         </div>
