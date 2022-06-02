@@ -1,5 +1,6 @@
 <template>
-          <form>
+          <form enctype="multipart/form-data" 
+            @submit.prevent="createParticipant">
           <h6>Nouveau Artistes</h6>
           <div class="flex gap-5 my-10">
             <div class="">
@@ -19,6 +20,14 @@
             </div>
 
         </form>
+        <div class="">   
+            <button type="submit" class="">
+              Créer
+            </button>
+            <button class="" >
+              <router-link to="/Liste" >Cancel</router-link>
+            </button>
+        </div>
 </template>
 <script>
 import modif from "../../components/icons/SaveView.vue"
