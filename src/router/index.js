@@ -11,6 +11,8 @@ import StyleguideView from '../views/Style-guideView.vue'
 import page404 from '../views/404View.vue'
 import ListeView from '../views/listes-artistes/ListeView.vue'
 import CreateView from '../views/listes-artistes/CreateView.vue'
+import DeleteArtistesView from '../views/listes-artistes/DeleteView.vue'
+import UpdateArtistesView from '../views/listes-artistes/UpdateView.vue'
 
 
 const router = createRouter({
@@ -27,6 +29,8 @@ const router = createRouter({
     { path: '/styleguide', name: 'StyleguideView', component: StyleguideView },
     { path: '/Liste', name: 'ListeView', component: ListeView },
     { path: '/Creat', name: 'CreateView', component: CreateView },
+    { path: '/delete/:id', name: 'deleteArtistes', component: DeleteArtistesView },
+    { path: '/update/:id', name: 'updateArtistes', component: UpdateArtistesView },
     { path: '/:pathMatch(.*)*', name: 'page404', component: page404 },
 
   ],
