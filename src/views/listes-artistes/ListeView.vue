@@ -12,12 +12,12 @@
             <table class="">
                 <thead>
                     <tr>                      
-                        <th scope="">
-                          <div class="my-10">Liste des Artiste actuels</div>                          
+                        <th scope="" class="">
+                          <div class="my-10 text-lg md:text-2xl py-10 font-timmana text-center">Liste des Artiste actuels</div>                          
                           <span class="">
                             <div class="flex gap-4 my-10" >
                                 <div class="">
-                                  <span class="" >Filtrage</span>
+                                  <span class="text-lg md:text-lg py-10 font-poppins" >Filtrage</span>
                                 </div>
                                 <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="filter"/>
                                 <button class="" type="submit" title="Création">
@@ -34,7 +34,7 @@
                           <form>
                             <div class="grid grid-cols-4   ">    
                               <div class="flex flex-col">
-                                <span class="">Nom</span>
+                                <span class="font-poppins text-base">Nom</span>
                               </div>
                               <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.nom" required />
                               <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
