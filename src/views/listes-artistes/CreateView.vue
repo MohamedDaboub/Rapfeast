@@ -4,9 +4,9 @@
           <h6 class="text-xl md:text-3xl text-center py-10 font-timmana underline-offset-2 underline effet-shawdow light:effet-shawdowinligth text-text">Nouveau Artistes</h6>
           <div class="grid grid-cols-2">
             <div>
-              <div class="">
+              <div class="justify-center flex mx-auto text-center ">
                     <div>
-                      <img class="w-1/2" :src="image1"/>
+                      <img class="w-1/2" :src="imageData"/>
                   </div>
               </div>
             </div>
@@ -15,17 +15,17 @@
               <div class="">
                 <span class="text-white">Nom</span>
               </div>
-              <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="nom" required />
+              <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.nom" required />
             </div>
               <div class="flex gap-5">
                   <div class="">
                       <span class="text-white" >Date de concert</span>
                   </div>
-                  <input type="date" class=" text-black h-8 border-2 border-Default/me/Gris rounded " v-model="date"  format="dd/mm/yyyy"  required />
+                  <input type="date" class=" text-black h-8 border-2 border-Default/me/Gris rounded " v-model="Artiste.date"  format="dd/mm/yyyy"  required />
               </div>
-            <div class="">
+            <div class="my-10">
               <div class="">
-                  <span class="text-white">Photo</span>
+                  <span class="text-white ">Photo</span>
               </div>
               <div class="">
                   <input type="file" class="text-white" ref="file" id="file" 
@@ -81,12 +81,11 @@ export default {
     data(){ // Données de la vue
             return{  
                 imageData:null,                 
-                nom:null, // Pour la création d'un nouveau pays
                 listeArtistesSynchro:[], // Liste des pays synchronisée - collection pays de Firebase 
                 date:null,
                 Artiste:{
                   nom:null,
-                  photo:null,
+                  image1:null,
                   date:null,
                 }
             }
@@ -113,21 +112,41 @@ export default {
                     this.listeArtistesSynchro = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()})); 
                 })
             },
+            previewImage: function(event) {
+            // Mise à jour de la photo du participant
+            this.file = this.$refs.file.files[0];
+            // Récupérer le nom du fichier pour la photo du participant
+            this.Artiste.image1 = this.file.name;
+            // Reference to the DOM input element
+            // Reference du fichier à prévisualiser
+            var input = event.target;
+            // On s'assure que l'on a au moins un fichier à lire
+            if (input.files && input.files[0]) {
+                // Creation d'un filereader
+                // Pour lire l'image et la convertir en base 64
+                var reader = new FileReader();
+                // fonction callback appellée lors que le fichier a été chargé
+                reader.onload = (e) => {
+                    // Read image as base64 and set to imageData
+                    // lecture du fichier pour mettre à jour 
+                    // la prévisualisation
+                    this.imageData = e.target.result;
+                }
+                // Demarrage du reader pour la transformer en data URL (format base 64) 
+                reader.readAsDataURL(input.files[0]);        
+            }
+            },
             async createArtiste(){
-                console.log('createArtiste')
-                // Obtenir Firestore
-                const firestore = getFirestore();
-                // Base de données (collection)  document pays
-                const dbArtiste= collection(firestore, "Artiste");
-                // On passe en paramètre format json
-                // Les champs à mettre à jour
-                // Sauf le id qui est créé automatiquement
-                const docRef = await addDoc(dbArtiste,{
-                    nom: this.nom,
-                    date: this.date
-                })
-                console.log('document créé avec le id : ', docRef.id);
-             },
+            const storage = getStorage();
+            const refStorage = ref(storage, 'artiste/'+this.Artiste.image1);
+            console.log('Artiste',this.Artiste)
+            await uploadString(refStorage, this.imageData, 'data_url').then((snapshot) => {
+                console.log('Uploaded a base64 string');
+                const db = getFirestore();
+                const docRef = addDoc(collection(db, 'Artiste'), this.Artiste);
+            });
+            this.$router.push('/Liste')
+        },
             async updateArtiste(Artiste){
                 // Obtenir Firestore
                 const firestore = getFirestore();
@@ -159,120 +178,3 @@ export default {
 }
 
 </script>
-<!-- <template>
-    <div>
-        <h1 class="py-8 md:text-4xl md:pt-8 lg:text-5xl">Créer les artistes</h1>
-
-        <section class="pb-6 mx-2 md:max-w-[70%] md:m-auto lg:max-w-[50%] lg:pb-14">
-            <form enctype="multipart/form-data"
-                @submit.prevent="createArtistes">
-                <div class="bg-marron dark:bg-Dark-marron p-2 rounded-xl flex gap-2">
-                    <div class="mx-auto flex flex-col justify-end mb-10">
-                        <div class="m-auto">
-                            <img class="" :src="imageData"/>
-                        </div>
-                        <label class="bg-jaune hover:text-jaune hover:bg-marron+ rounded-xl p-3 font-bold text-center" for="file">
-                            <input type="file" class="hidden" ref="file" id="file" required
-                            @change="previewImage">
-                            Selectionner une image
-                        </label>
-                    </div>
-                    <div class="m-auto">
-                        <label class="flex flex-col mb-3">
-                            <span class="font-semibold my-1" >Nom :  </span>
-                            <input class="bg-jaune rounded-xl border-none w-80" type="text" placeholder="Nom de la personne"
-                                v-model="Artistes.Nom" required />  
-                        </label>
-                        <div class="flex justify-between gap-10 my-4">
-                            <button type="submit">
-                                <Bouton2 class="w-32" Nom="Créer"/>
-                            </button>
-
-                            <RouterLink to="/Artistes" >
-                                <button type="submit">
-                                </button>
-                            </RouterLink>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </div>
-</template>
-
-<script>
-
-import { 
-    getFirestore, 
-    collection, 
-    doc, 
-    getDocs, 
-    addDoc, 
-    updateDoc, 
-    deleteDoc, 
-    onSnapshot,
-    query,
-    orderBy } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
-import {
-    getStorage,
-    ref,
-    getDownloadURL,
-    uploadString,
-    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
-// import { preview } from "vite";
-export default {
-    data (){
-        return {
-            imageData:null,
-            Artistes: {
-                Nom:null,
-                Role:null,
-                Bio:null,
-                Jour:null,
-                photo:null,
-            }
-        }
-    },
-    name: "CréationView",
-    components: { Bouton2 },
-    mounted (){
-        this.getArtistes();
-    },
-    methods : {
-        async getArtistes (){
-            const firestore = getFirestore();
-            const dbArtistes = collection(firestore, "Artistes");
-            const q = query(dbArtistes, orderBy('Nom','asc'));
-            await onSnapshot(q, (snapshot) => {
-                this.listeArtistes = snapshot.docs.map(doc => (
-                    {id:doc.id, ...doc.data()}
-                ))
-        console.log("Liste des Artiste", this.listeArtiste)
-            })
-        },
-        previewImage: function(event) {
-            //debugger
-            this.file = this.$refs.file.files[0];
-            this.Artiste.photo = this.file.name;
-            var input = event.target;
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = (e) => {
-                    this.imageData = e.target.result;
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        },
-        async createArtistes(){
-            const storage = getStorage();
-            const refStorage = ref(storage, 'Artiste/'+this.Artiste.photo);
-            await uploadString(refStorage, this.imageData, 'data_url').then((snapshot) => {
-                console.log('Uploaded a base64 string');
-                const db = getFirestore();
-                const docRef = addDoc(collection(db, 'Artiste'), this.Artiste);
-            });
-            this.$router.push('/Artiste')
-        },
-    },
-};
-</script> -->

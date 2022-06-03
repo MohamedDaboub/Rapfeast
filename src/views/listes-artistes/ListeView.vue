@@ -39,16 +39,12 @@
                               <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.nom" required />
                               <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
                               <div>
-                              <RouterLink :to="{ name:'UpdateParticipant', params: { id: part.id }}">
-                                  <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
-                                  <edit class="fill-white"/>
-                                </button>
-                              </RouterLink>
-                              <RouterLink :to="{ name:'DeleteParticipant', params: { id: part.id }}">
-                              <button class="" type="button"  title="Suppression">
+                              <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
+                                <edit class="fill-white"/>
+                              </button>
+                              <button class="" type="button" @click.prevent="deleteArtiste(Artiste)" title="Suppression">
                                 <trach class="fill-white"/>
                               </button>
-                              </RouterLink>
                               </div>
                             </div>
                           </form>
@@ -63,7 +59,8 @@
             <card
                 :nomart="artiste.nom"
                 :nbrJour="artiste.date"
-                :image1="artiste.image1"/>
+                :image1="artiste.image1"
+                />
         </div>
 
     </div>
@@ -107,11 +104,13 @@ export default {
         
     components:{modif,Search,trach,card,plus,edit},
     data(){ // Données de la vue
-            return{                
+            return{ 
+                Artiste:null,
                 nom:null, // Pour la création d'un nouveau pays
                 listeArtistesSynchro:[], // Liste des pays synchronisée - collection pays de Firebase
                 filter:'',
                 date:null
+                
             }
         },
         computed:{
@@ -150,49 +149,62 @@ export default {
                     // on identifie clairement le id du document
                     // les rest parameters permet de préciser la récupération de toute la partie data
                     this.listeArtistesSynchro = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()})); 
-                })
-            },
-            async createArtiste(){
-                console.log('createArtiste')
-                // Obtenir Firestore
-                const firestore = getFirestore();
-                // Base de données (collection)  document pays
-                const dbArtiste= collection(firestore, "Artiste");
-                // On passe en paramètre format json
-                // Les champs à mettre à jour
-                // Sauf le id qui est créé automatiquement
-                const docRef = await addDoc(dbArtiste,{
-                    nom: this.nom,
-                    date: this.date,
-                })
-                console.log('document créé avec le id : ', docRef.id);
-             },
-            async updateArtiste(Artiste){
-                // Obtenir Firestore
-                const firestore = getFirestore();
-                // Base de données (collection)  document pays
-                // Reference du pays à modifier
-                const docRef = doc(firestore, "Artiste", Artiste.id);
-                // On passe en paramètre format json
-                // Les champs à mettre à jour
-                await updateDoc(docRef, {
-                    nom: Artiste.nom,
+                    this.listArtiste.forEach(function (Artiste) {
+                        const storage = getStorage();
+                        const spaceRef = ref(storage, "Artiste/"+ Artiste.image1);
+                        getDownloadURL(spaceRef)
+                          .then((url) => {
+                            Artiste.image1 = url;
+                          })
+                          .catch((error) => {
+                            console.log("erreur de downloadURL", error);
+                          });
+                      });
+                    });
+              },
+              async createArtiste(){
+                  console.log('createArtiste')
+                  // Obtenir Firestore
+                  const firestore = getFirestore();
+                  // Base de données (collection)  document pays
+                  const dbArtiste= collection(firestore, "Artiste");
+                  // On passe en paramètre format json
+                  // Les champs à mettre à jour
+                  // Sauf le id qui est créé automatiquement 
+                  console.log('Artiste',this.Artiste)
+                  const docRef = await addDoc(dbArtiste,{
+                      nom: this.nom,
+                      date: this.date,
+                      image:this.Artiste.image1
+                  })
+                  console.log('document créé avec le id : ', docRef.id);
+              },
+              async updateArtiste(Artiste){
+                  // Obtenir Firestore
+                  const firestore = getFirestore();
+                  // Base de données (collection)  document pays
+                  // Reference du pays à modifier
+                  const docRef = doc(firestore, "Artiste", Artiste.id);
+                  // On passe en paramètre format json
+                  // Les champs à mettre à jour
+                  await updateDoc(docRef, {
+                      nom: Artiste.nom,
 
-                }) 
-             },
-            async deleteArtiste(Artiste){
-                // Obtenir Firestore
-                const firestore = getFirestore();
-                // Base de données (collection)  document pays
-                // Reference du pays à supprimer
-                const docRef = doc(firestore, "Artiste", Artiste.id);
-                // Suppression du pays référencé
-                await deleteDoc(docRef);
-             },
-            dateFr(d){
-              let date = d.split('-');
-              return date[2]+'/'+date[1]+'/'+date[0];
-        }
+                  }) 
+              },
+              async deleteArtiste(Artiste){
+                  // Obtenir Firestore
+                  const firestore = getFirestore();
+                  // Base de données (collection)  document pays
+                  // Reference du pays à supprimer
+                  const docRef = doc(firestore, "Artiste", Artiste.id);
+                  // Suppression du pays référencé
+                  await deleteDoc(docRef);
+              },
+              dateFr(d){
+                let date = d.split('-');
+                return date[2]+'/'+date[1]+'/'+date[0];
+          }
         },
 
 }
