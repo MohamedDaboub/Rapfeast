@@ -128,7 +128,7 @@ export default {
         async deleteArtistes(){
             const firestore = getFirestore();
             // Suppresion du Artistes
-            await deleteDoc(doc(firestore, "artiste", this.$route.params.id));
+            await deleteDoc(doc(firestore, "Artiste", this.$route.params.id));
             // Suppresson de l'image
             const storage = getStorage();
             // Référence du fichier de la photo
