@@ -4,20 +4,20 @@
 
         <section class="pb-6 mx-2 md:max-w-[70%] md:m-auto lg:max-w-[50%] lg:py-14">
             <form enctype="multipart/form-data"
-                @submit.prevent="updateArtiste">
-                <div class="bg-marron dark:bg-Dark-marron p-2 rounded-xl flex gap-2">
-                    <div class="mx-auto flex flex-col justify-end mb-10">
+                @submit.prevent="deleteArtistes">
+                <div class=" rounded-xl flex gap-2">
+                    <div class="mx-auto flex flex-col justify-end ">
                         <div class="m-auto">
                             <img class="" :src="photoActuelle"/>
                         </div>
-                        <label class="bg-jaune hover:text-jaune hover:bg-marron+ rounded-xl p-3 font-bold text-center text-white" for="file" required>
+                        <label class=" text-center text-white" for="file" required>
                             <input type="file" class="hidden" ref="file" id="file"
                             @change="previewImage" >
                             Selectionner une image
                         </label>
                     </div>
                     <div class="m-auto">
-                        <label class="flex flex-col mb-3">
+                        <label class="flex flex-col ">
                             <span class="text-white" >Nom :  </span>
                             <input class="" type="text" placeholder="Nom de la personne" required
                                 v-model="Artiste.nom" />  
@@ -32,13 +32,13 @@
 
                         </div>
                         <div class="flex justify-between gap-10 my-4">
-                            <button type="submit" @click.prevent="deleteArtistes(Artiste)" class="text-white">
-                            supprimer
+                            <button type="submit" @click.prevent="deleteArtistes(Artiste)" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
+                            Supprimer
                             </button>
 
                             <RouterLink to="/liste" >
-                                <button type="submit" class="text-white">
-                                    cancel
+                                <button type="submit" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
+                                    Cancel
                                 </button>
                             </RouterLink>
                         </div>
@@ -87,7 +87,7 @@ export default {
             photoActuelle:null,
         }
     },
-    name: "CréationView",
+    name: "DeleteView.",
     components: {  },
     mounted (){
         this.getArtistes(this.$route.params.id);
