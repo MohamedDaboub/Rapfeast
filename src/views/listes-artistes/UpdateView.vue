@@ -24,9 +24,9 @@
                         </label>
                         <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
                         <div class="flex justify-between gap-10 my-4">
-                            <button type="submit" class="text-white" @click.prevent="updateArtiste(Artiste)"> modifier
+                            <button type="submit" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black" @click.prevent="updateArtiste(Artiste)"> modifier
                             </button>
-                            <RouterLink to="/liste" class=" text-white" >
+                            <RouterLink to="/liste" class=" bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black" >
                                 <button type="submit">Cancel
                                 </button>
                             </RouterLink>
