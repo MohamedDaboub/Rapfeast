@@ -55,17 +55,19 @@
         </div>
     </div>
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 py-10 mx-10">
-        <div v-for="artiste in listeArtistesSynchro" :key="artiste.id">
+        <div v-for="artiste in listeArtistesSynchro" :key="artiste.id" >
             <card
+                :image1="artiste.image1"
                 :nomart="artiste.nom"
                 :nbrJour="artiste.date"
-                :image1="artiste.image1"
                 />
+              
         </div>
 
     </div>
 </template>
 <script>
+
 import modif from "../../components/icons/SaveView.vue"
 import Search from "../../components/icons/SeachView.vue"
 import trach from "../../components/icons/TrashView.vue"
@@ -92,7 +94,8 @@ import {
     getStorage,             // Obtenir le Cloud Storage
     ref,                    // Pour créer une référence à un fichier à uploader
     getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
-    uploadString,           // Permet d'uploader sur le Cloud Storage une image en Base64
+    uploadString,
+    deleteObject,           // Permet d'uploader sur le Cloud Storage une image en Base64
 } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
 
 
@@ -149,9 +152,9 @@ export default {
                     // on identifie clairement le id du document
                     // les rest parameters permet de préciser la récupération de toute la partie data
                     this.listeArtistesSynchro = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()})); 
-                    this.listArtiste.forEach(function (Artiste) {
+                    this.listeArtistesSynchro.forEach(function (Artiste) {
                         const storage = getStorage();
-                        const spaceRef = ref(storage, "Artiste/"+ Artiste.image1);
+                        const spaceRef = ref(storage, "artiste/"+ Artiste.image1);
                         getDownloadURL(spaceRef)
                           .then((url) => {
                             Artiste.image1 = url;
@@ -161,23 +164,6 @@ export default {
                           });
                       });
                     });
-              },
-              async createArtiste(){
-                  console.log('createArtiste')
-                  // Obtenir Firestore
-                  const firestore = getFirestore();
-                  // Base de données (collection)  document pays
-                  const dbArtiste= collection(firestore, "Artiste");
-                  // On passe en paramètre format json
-                  // Les champs à mettre à jour
-                  // Sauf le id qui est créé automatiquement 
-                  console.log('Artiste',this.Artiste)
-                  const docRef = await addDoc(dbArtiste,{
-                      nom: this.nom,
-                      date: this.date,
-                      image:this.Artiste.image1
-                  })
-                  console.log('document créé avec le id : ', docRef.id);
               },
               async updateArtiste(Artiste){
                   // Obtenir Firestore
