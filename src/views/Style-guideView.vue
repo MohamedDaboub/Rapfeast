@@ -95,8 +95,8 @@
                 Jour="Dimanche 10"
                 Heure="20h30"></cardach>
         </div>
-        <button type="submit"  class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">Envoyer votre message</button>
-                <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white light:border-Default/me/Gris my-5  mx-5 hover:bg-white hover:text-black focus:bg-blue-600 ">Je m'abonne</button>
+        <button type="submit"  class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black text-white">Envoyer votre message</button>
+                <button type="submit" class=" font-poppins  md:px-8 p-4 border-2 border-white light:border-Default/me/Gris my-5  mx-5 hover:bg-white hover:text-black focus:bg-blue-600 text-white ">Je m'abonne</button>
         
     </div>
 </template>
