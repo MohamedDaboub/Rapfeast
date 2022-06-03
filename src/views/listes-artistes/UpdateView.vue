@@ -5,12 +5,12 @@
         <section class="">
             <form enctype="multipart/form-data"
                 @submit.prevent="updateArtiste">
-                <div class="bg-marron dark:bg-Dark-marron p-2 rounded-xl flex gap-2">
-                    <div class="mx-auto flex flex-col justify-end mb-10">
+                <div class="rounded-xl flex gap-2">
+                    <div class="mx-auto flex flex-col justify-end">
                         <div class="m-auto">
                             <img class="" :src="imageData"/>
                         </div>
-                        <label class="bg-jaune hover:text-jaune hover:bg-marron+ rounded-xl p-3 font-bold text-center text-white" for="file" required>
+                        <label class=" rounded-xl p-3 font-bold text-center text-white" for="file" required>
                             <input type="file" class="hidden text-white" ref="file" id="file"
                             @change="previewImage">
                             Selectionner une image
@@ -24,10 +24,10 @@
                         </label>
                         <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
                         <div class="flex justify-between gap-10 my-4">
-                            <button type="submit" class="text-white" @click.prevent="updateArtiste(Artiste)"> cree
+                            <button type="submit" class="text-white" @click.prevent="updateArtiste(Artiste)"> modifier
                             </button>
                             <RouterLink to="/liste" class=" text-white" >
-                                <button type="submit">d,vd
+                                <button type="submit">Cancel
                                 </button>
                             </RouterLink>
                         </div>
