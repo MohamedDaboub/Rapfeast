@@ -32,12 +32,12 @@
 
                         </div>
                         <div class="flex justify-between gap-10 my-4">
-                            <button type="submit" @click.prevent="deleteArtistes(Artiste)" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
+                            <button type="submit" @click.prevent="deleteArtistes(Artiste)" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black text-white">
                             Supprimer
                             </button>
 
                             <RouterLink to="/liste" >
-                                <button type="submit" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black">
+                                <button type="submit" class="bg-Default/me/Gris px-8 py-4 my-7 text-base hover:bg-white hover:text-black text-white">
                                     Cancel
                                 </button>
                             </RouterLink>
