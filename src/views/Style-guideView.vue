@@ -86,7 +86,7 @@
             <cardpro
                 image1="/img/Image11.webp"
                 nomart="Ranger Corbin"
-                nbrJour="10 "></cardpro>
+                nbrJour="10 juillet 2022 "></cardpro>
             <cardach
                 Artiste="Lucas Leroux"
                 image2="/img/Image10.webp" 
