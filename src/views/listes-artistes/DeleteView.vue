@@ -82,7 +82,7 @@ export default {
                 date:null,
                 image1:null,
             },
-            refArtistes:null,
+            refArtiste:null,
             imgModifiee:false,
             photoActuelle:null,
         }
@@ -90,10 +90,10 @@ export default {
     name: "DeleteView.",
     components: {  },
     mounted (){
-        this.getArtistes(this.$route.params.id);
+        this.getArtiste(this.$route.params.id);
     },
     methods :{
-        async getArtistes(id){
+        async getArtiste(id){
             // Obtenir Firestore
             const firestore = getFirestore();
             // Base de données (collection)  document participant
