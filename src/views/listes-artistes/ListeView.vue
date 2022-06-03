@@ -34,14 +34,16 @@
                           <form>
                             <div class="grid grid-cols-4   ">    
                               <div class="flex flex-col">
-                                <span class="font-poppins text-base">Nom</span>
+                                <span class="font-poppins text-base ">Nom</span>
                               </div>
                               <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.nom" required />
                               <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
                               <div>
-                              <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
-                                <edit class="fill-white"/>
-                              </button>
+                              <RouterLink :to="{ name:'updateArtistes', params: {id:Artiste.id}}">
+                                <button class="" type="button"  title="Modification">
+                                  <edit class="fill-white"/>
+                                </button>
+                              </RouterLink>
                               <button class="" type="button" @click.prevent="deleteArtiste(Artiste)" title="Suppression">
                                 <trach class="fill-white"/>
                               </button>
