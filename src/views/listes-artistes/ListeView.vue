@@ -39,12 +39,16 @@
                               <input type="text" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.nom" required />
                               <input type="date" class="text-black h-8 border-2 border-Default/me/Gris rounded" v-model="Artiste.date" required />
                               <div>
-                              <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
-                                <edit class="fill-white"/>
-                              </button>
-                              <button class="" type="button" @click.prevent="deleteArtiste(Artiste)" title="Suppression">
+                              <RouterLink :to="{ name:'UpdateParticipant', params: { id: part.id }}">
+                                  <button class="" type="button" @click.prevent="updateArtiste(Artiste)" title="Modification">
+                                  <edit class="fill-white"/>
+                                </button>
+                              </RouterLink>
+                              <RouterLink :to="{ name:'DeleteParticipant', params: { id: part.id }}">
+                              <button class="" type="button"  title="Suppression">
                                 <trach class="fill-white"/>
                               </button>
+                              </RouterLink>
                               </div>
                             </div>
                           </form>
@@ -54,12 +58,12 @@
             </table>
         </div>
     </div>
-    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 py-10 mx-10">
+    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 py-10 mx-10">
         <div v-for="artiste in listeArtistesSynchro" :key="artiste.id">
             <card
                 :nomart="artiste.nom"
                 :nbrJour="artiste.date"
-                image1="/public/img/Image7.webp"/>
+                :image1="artiste.image1"/>
         </div>
 
     </div>
@@ -159,7 +163,7 @@ export default {
                 // Sauf le id qui est créé automatiquement
                 const docRef = await addDoc(dbArtiste,{
                     nom: this.nom,
-                    date: this.date
+                    date: this.date,
                 })
                 console.log('document créé avec le id : ', docRef.id);
              },
