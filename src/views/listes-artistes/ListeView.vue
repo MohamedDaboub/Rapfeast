@@ -44,9 +44,11 @@
                                   <edit class="fill-white"/>
                                 </button>
                               </RouterLink>
-                              <button class="" type="button" @click.prevent="deleteArtiste(Artiste)" title="Suppression">
+                              <RouterLink :to="{ name:'deleteArtistes', params: {id:Artiste.id}}">
+                              <button class="" type="button" title="Suppression">
                                 <trach class="fill-white"/>
                               </button>
+                              </RouterLink>
                               </div>
                             </div>
                           </form>
